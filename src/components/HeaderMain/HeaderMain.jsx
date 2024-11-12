@@ -18,7 +18,7 @@ return (
 <>
       <section className={`section home G-align-center ${props.active === 0 ? "active" : ""}`}>
         <div className='home_info'>
-        <h1>{t('Hi')}<br/>{t("I'm")}<span className='txt_color'>{t("Artur")}</span>,<br/>{t("Developer")}</h1>
+        <h1>{t('Hi')}<br/>{t("I'm")} <span className='txt_color'> {t("Artur")}</span>,<br/>{t("Developer")}</h1>
        
           <div className='btn_sci G-align-center'>
             <div className='btn_btn'>

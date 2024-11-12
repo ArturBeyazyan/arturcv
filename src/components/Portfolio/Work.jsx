@@ -17,9 +17,9 @@ export const Work = (props) => {
                         </div>
                         <div className="work_info">
                             <h4>{t(el.title)}</h4>
-                            <p>{t(el.title)}</p>
+                            <p>{t(el.title )}</p>
                             <div className="tech_used">
-                                <p>{t(el.tech_used)}</p>
+                                <p>{t(el.tech_used)} {t(el.tech_skills)}</p>
                             </div>
                             <div className="portfolio_icon work_icon">
                                 <NavLink to={el.preview_url} target="_blank"><FaArrowLeft/>

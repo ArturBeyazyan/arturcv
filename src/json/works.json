@@ -4,6 +4,7 @@
         "img": "todo",
         "title": "TODO",
         "tech_used": "REACT",
+        "tech_skills":"SASS",
         "path_git": "GithubRepository",
         "path_Preview": "Preview",
         "git_url":"https://github.com/Artur5544-a/Todo",
@@ -15,7 +16,7 @@
         "tech_used": "REACT",
         "path_git": "GithubRepository",
         "path_Preview": "Preview",
-        "git_url":"",
-        "preview_url":""
+        "git_url":"https://github.com/Artur5544-a/BubbelSort",
+        "preview_url":"https://artur5544-a.github.io/BubbelSort/"
     }
 ]
