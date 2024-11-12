@@ -8,7 +8,6 @@
 
 .about {
     justify-content: space-between;
-
     @include screen-max-width-768 {
         flex-direction: column;
         justify-content: normal;
@@ -26,7 +25,6 @@
 
     .img_wrapper {
         padding-right: $size-3;
-
         @include screen-max-width-768 {
             padding-right: 0;
 
@@ -42,17 +40,14 @@
             box-shadow: 0 0 $size-2 var(--main-color);
             overflow: hidden;
             transition: 1s;
-
             @include screen-max-width-768 {
                 width: $size-35;
                 height: $size-35;
             }
-
             @include screen-max-width-400 {
                 width: $size-30;
                 height: $size-30;
             }
-
             @include screen-max-width-350 {
                 width: $size-25;
                 height: $size-25;
@@ -66,7 +61,6 @@
                 object-fit: cover;
             }
         }
-
         .about_img:hover {
             box-shadow: 0 0 $size-8 var(--main-color);
         }
@@ -88,10 +82,8 @@
 
         h1 {
             font-size: $font-size-3;
-            margin-bottom: $size-1;
             color: var(--white-color);
             line-height: 1;
-
             @include screen-max-width-400 {
                 margin: 0;
             }
@@ -99,19 +91,19 @@
 
         .tiitle {
             color: var(--title-color);
-
             font-size: $font-size-4;
             text-align: left;
-
             @include screen-max-width-991 {
                 font-size: $font-size-3;
             }
-
             @include screen-max-width-768 {
                 text-align: center;
+                font-size: $font-size-2_3;
             }
-
-            @include screen-max-width-400 {
+            @include screen-max-width-600 {
+                font-size: $font-size-2;
+            }
+            @include screen-max-width-768 {
                 text-align: center;
             }
         }
@@ -119,11 +111,9 @@
         h3 {
             font-size: $font-size-2_5;
             color: var(--main-color);
-
             @include screen-max-width-991 {
                 font-size: $font-size-2;
             }
-
             @include screen-max-width-768 {
                 text-align: center;
             }
@@ -133,19 +123,17 @@
             color: var(--main-color);
             font-size: $font-size-1_5;
             margin: $size-1 0 $size-2;
-
             @include screen-max-width-991 {
                 font-size: $font-size-1_2;
             }
-
             @include screen-max-width-768 {
                 margin: 0 auto;
                 text-align: center;
                 width: 50%;
             }
-            @include screen-max-width-600{
+            @include screen-max-width-600 {
                 width: 100%;
-            } 
+            }
             @include screen-max-width-400 {
                 width: 100%;
                 padding: 0 $size-1;
@@ -154,27 +142,26 @@
 
         .btn_btn {
             display: flex;
-
             @include screen-max-width-768 {
                 padding-top: 1rem;
                 justify-content: center;
             }
 
             .btn {
+                @include screen-max-width-1200 {
+                    font-size: $font-size-1;
+                }
                 padding: $size-1_2 $size-3;
                 background: var(--main-color);
                 border-radius: $size-5;
                 box-shadow: 0 0 $size-1 var(--main-color);
                 font-size: $font-size-1_6;
                 font-weight: 600;
-                transition: .3s;
-
+                transition: 0.3s;
                 &:hover {
                     box-shadow: none;
                 }
-
             }
-
             a {
                 color: var(--bg-color);
             }

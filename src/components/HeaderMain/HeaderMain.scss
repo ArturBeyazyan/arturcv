@@ -30,14 +30,14 @@
         }
         h1 {
             font-size: $font-size-3;
-            margin-bottom: $size-1;
             color: var(--main-color);
             line-height: 1;
             @include screen-max-width-768 {
                 text-align: center;
                 font-size: $font-size-2_3;
             }
-            @include screen-max-width-400 {
+
+            @include screen-max-width-600 {
                 font-size: $font-size-2;
             }
         }
@@ -75,10 +75,12 @@
                 }
             }
             .sci {
+                margin-top: $size-1;
                 margin-left: $size-2;
                 @include screen-max-width-1200 {
                     margin-left: $size-1;
                 }
+               
                 @include screen-max-width-400 {
                     margin-left: 0;
                     margin-bottom: $size-1;
@@ -139,6 +141,11 @@
         @include screen-max-width-768 {
             padding-top: $size-3;
             padding-bottom: $size-2;
+        }
+        @include screen-max-width-600 {
+            padding-top: $size-3;
+            padding-bottom: 0;
+
         }
         .img_box {
             position: relative;
