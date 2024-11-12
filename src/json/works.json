@@ -5,13 +5,17 @@
         "title": "TODO",
         "tech_used": "REACT",
         "path_git": "GithubRepository",
-        "path_Preview": "Preview"
+        "path_Preview": "Preview",
+        "git_url":"https://github.com/Artur5544-a/Todo",
+        "preview_url":"https://artur5544-a.github.io/Todo/"
     }, {
         "id": 2,
         "img": "bubble",
         "title": "Bubble Sort",
         "tech_used": "REACT",
         "path_git": "GithubRepository",
-        "path_Preview": "Preview"
+        "path_Preview": "Preview",
+        "git_url":"",
+        "preview_url":""
     }
 ]

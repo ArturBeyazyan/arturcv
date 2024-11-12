@@ -1,6 +1,7 @@
 import {FaArrowLeft, FaGithub, FaCode} from "react-icons/fa";
 import {useTranslation} from 'react-i18next';
 import works from '../../json/works.json'
+import { NavLink } from "react-router-dom";
 export const Work = (props) => {
     const {t} = useTranslation()
     return (
@@ -21,12 +22,12 @@ export const Work = (props) => {
                                 <p>{t(el.tech_used)}</p>
                             </div>
                             <div className="portfolio_icon work_icon">
-                                <a href=""><FaArrowLeft/>
-                                    <span className='tooltip'>{t(el.path_Preview)}</span>
-                                </a>
-                                <a href=""><FaGithub/>
+                                <NavLink to={el.preview_url} target="_blank"><FaArrowLeft/>
+                                        <span className='tooltip'>{t(el.path_Preview)}</span>
+                                </NavLink>
+                                <NavLink to={el.git_url} target="_blank"><FaGithub/>
                                     <span className='tooltip'>{t(el.path_git)}</span>
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
