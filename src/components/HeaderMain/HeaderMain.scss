@@ -1,0 +1,169 @@
+@import '../../assets//style/mixin.scss';
+@import '../../assets/style/variables.scss';
+@import '../../assets/style/normalize.scss';
+
+.home {
+    justify-content: space-between;
+    @include screen-max-width-768 {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: $size-2;
+    }
+}
+.section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 8%;
+    @include screen-max-width-1200 {
+        padding: 0 5%;
+    }
+    @include screen-max-width-991 {
+        padding: 0 2%;
+    }
+    @include screen-max-width-400 {
+        padding: 0;
+    }
+    .home_info {
+        @include screen-max-width-400 {
+            text-align: center;
+        }
+        h1 {
+            font-size: $font-size-3;
+            margin-bottom: $size-1;
+            color: var(--main-color);
+            line-height: 1;
+            @include screen-max-width-768 {
+                text-align: center;
+                font-size: $font-size-2_3;
+            }
+            @include screen-max-width-400 {
+                font-size: $font-size-2;
+            }
+        }
+        .btn_sci {
+            @include screen-max-width-768 {
+                flex-direction: column-reverse;
+            }
+            @include screen-max-width-600 {
+                flex-wrap: wrap;
+            }
+            @include screen-max-width-400 {
+                flex-direction: column-reverse;
+            }
+            .btn_btn {
+                @include screen-max-width-768 {
+                    padding-top: 1rem;
+                }
+                .btn {
+                    @include screen-max-width-1200 {
+                        font-size: $font-size-1;
+                    }
+                    padding: $size-1_2 $size-3;
+                    background: var(--main-color);
+                    border-radius: $size-5;
+                    box-shadow: 0 0 $size-1 var(--main-color);
+                    font-size: $font-size-1_6;
+                    font-weight: $font-weight-600;
+                    transition: 0.3s;
+                    &:hover {
+                        box-shadow: none;
+                    }
+                    a {
+                        color: var(--bg-color);
+                    }
+                }
+            }
+            .sci {
+                margin-left: $size-2;
+                @include screen-max-width-1200 {
+                    margin-left: $size-1;
+                }
+                @include screen-max-width-400 {
+                    margin-left: 0;
+                    margin-bottom: $size-1;
+                }
+                a {
+                    @include screen-max-width-1200 {
+                        margin: $size-04;
+                    }
+                    @include screen-max-width-400 {
+                        padding: $size-06;
+                    }
+                    @include screen-max-width-350 {
+                        padding: $size-04;
+                    }
+                    position: relative;
+                    display: inline-flex;
+                    padding: $size-06;
+                    border: $size-02 solid var(--main-color);
+                    border-radius: 50%;
+                    font-size: $font-size-2;
+                    color: var(--main-color);
+                    margin: $size-08;
+                    transition: 0.3s;
+                    & {
+                        background: var(--main-color);
+                        color: var(--bg-color);
+                    }
+                    .tooltip {
+                        position: absolute;
+                        top: $size-_04;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        padding: $size-03 $size-1;
+                        background: var(--main-color);
+                        border-radius: $size-04;
+                        color: var(--bg-color);
+                        font-size: $font-size-1_6;
+                        font-weight: 500;
+                        white-space: nowrap;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: 0.3s;
+                    }
+                    &:hover .tooltip {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                    svg {
+                        &:hover {
+                            color: var(--white-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .img_wrapper {
+        @include screen-max-width-768 {
+            padding-top: $size-3;
+            padding-bottom: $size-2;
+        }
+        .img_box {
+            position: relative;
+            width: 25vw;
+            height: 25vw;
+            background: linear-gradient(var(--bg-color));
+            border-radius: 50%;
+            border: $size-05 solid var(--main-color);
+            box-shadow: 0 0 $size-2 var(--main-color);
+            overflow: hidden;
+            transition: 1s;
+            @include screen-max-width-768 {
+                width: $size-20;
+                height: $size-20;
+            }
+            img {
+                position: absolute;
+                top: $size-3;
+                display: block;
+                width: 85%;
+                object-fit: cover;
+            }
+        }
+        .home_img:hover {
+            box-shadow: 0 0 $size-8 var(--main-color);
+        }
+    }
+}

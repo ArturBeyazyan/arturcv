@@ -1,0 +1,32 @@
+@import '../../assets/style/normalize.scss';
+@import '../../assets/style/variables.scss';
+
+.globe {
+    position: relative;
+    svg {
+        color: var(--main-color);
+        font-size: $size-2;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .open {
+        display: none;
+        .flags {
+            button {
+                display: block;
+                border: none;
+                background: none;
+                img {
+                    cursor: pointer;
+                    margin: 5px;
+                    width: 25px;
+                }
+            }
+        }
+    }
+    .opensLenguage {
+        position: absolute;
+        right: 8px;
+        display: block;
+    }
+}

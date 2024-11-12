@@ -1,0 +1,54 @@
+
+
+:root {
+  --nav-bg-color: #DCE7FB;
+  --bg-color: #F4F7FF;
+  --second-bg-color: #1f2733;
+  --third-bg-color: #DCE7FB;
+  --main-color: #4078FC;
+  --white-color: #fff;
+  --tab-list-color: #7c8594;
+  --transDur: 0.3s;
+  --theme-color: #f1f2f3;
+  --text-color: #000000;
+  --title-color:#004150;
+}
+[data-theme="dark"] {
+  --nav-bg-color: rgba(255, 255, 255, .1);
+  --bg-color: #171f2b;
+  --second-bg-color: #1f2733;
+  --third-bg-color: #2d3542;
+  --main-color: #0ef;
+  --white-color: #fff;
+  --tab-list-color: #7c8594;
+  --transDur: 0.3s;
+  --theme-color: #f1f2f3;
+  --text-color: #000000;
+  --title-color:#178BCF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 1rem;
+}
+//--nav-bg-color: rgba(255, 255, 255, .1);
+// --bg-color: #171f2b;
+// --second-bg-color: #1f2733;
+// --third-bg-color: #2d3542;
+// --main-color: #0ef;
+// --white-color: #fff;
+// --tab-list-color: #7c8594; 
+// --transDur: 0.3s;
+//  dark_Mode_Color
+
+// --theme-color: #f1f2f3;
+// --text-color: #000000;

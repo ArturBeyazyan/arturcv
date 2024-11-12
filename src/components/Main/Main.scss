@@ -1,0 +1,40 @@
+@import '../../assets/style/variables.scss';
+@import '../../assets/style/normalize.scss';
+
+.container {
+
+    width: 100vw;
+    height: 100vh;
+    perspective: 1500px;
+    perspective-origin: 50%;
+    position: relative;
+
+    .container_bar {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .container_language {
+            padding:$size-1 ;
+        }
+
+      
+
+        .container_time {
+            color: var(--main-color);
+        }
+    }
+
+    .box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transform-origin: 50% 50% -50vw;
+    }
+}
+

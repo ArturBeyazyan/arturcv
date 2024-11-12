@@ -1,0 +1,34 @@
+// FONT FAMILY NAME AS VAR
+// Montserrat armenian
+$Montserrat-Black : 'Montserratarm-Black';
+$Montserrat-Bold : 'Montserratarm-Bold';
+$Montserrat-ExtraBold : 'Montserratarm-ExtraBold';
+$Montserrat-ExtraLight : 'Montserratarm-ExtraLight';
+$Montserrat-Light : 'Montserratarm-Light';
+$Montserrat-Medium : 'Montserratarm-Medium';
+$Montserrat-Regular : 'Montserratarm-Regular';
+$Montserrat-SemiBold : 'Montserratarm-SemiBold';
+$Montserrat-Thin : 'Montserratarm-Thin';
+
+
+$font-path-montserrat : '../../assets/fontFamili/montserrat/';
+$list-montserrat : [
+$Montserrat-Black,
+$Montserrat-Bold,
+$Montserrat-ExtraBold,
+$Montserrat-ExtraLight,
+$Montserrat-Light,
+$Montserrat-Medium,
+$Montserrat-Regular,
+$Montserrat-SemiBold,
+$Montserrat-Thin
+];
+
+@each $name in $list-montserrat {
+  $src : $font-path-montserrat + $name;
+
+  @font-face {
+    src: url($src + '.otf') format('truetype');
+    font-family: $name;
+  }
+}

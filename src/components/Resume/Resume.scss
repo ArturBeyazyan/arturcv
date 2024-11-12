@@ -1,0 +1,169 @@
+@import '../../assets//style/mixin.scss';
+@import '../../assets/style/variables.scss';
+@import '../../assets/style/normalize.scss';
+.resume {
+    padding-top: $size-2;
+    padding-bottom: $size-27;
+    @include screen-max-width-991 {
+        padding-top: $size-1_5;
+        padding-bottom: $size-27;
+    }
+    @include screen-max-width-768 {
+        padding-bottom: $size-25;
+    }
+    @include screen-max-width-600 {
+        padding-top: $size-1;
+        padding-bottom: $size-22;
+    }
+    h2 {
+        color: var(--title-color);
+        text-align: center;
+        font-size: $font-size-3;
+        padding-top: $size-2;
+        @include screen-max-width-600 {
+            font-size: $font-size-2;
+        }
+    }
+    .tab_box {
+        display: flex;
+        width: 100%;
+        height: $size-5;
+        margin-top: $size-1;
+        margin-bottom: $size-2;
+        @include screen-max-width-768 {
+            height: $size-4;
+        }
+        @include screen-max-width-600 {
+            margin-top: 0;
+        }
+        .tab_list {
+            width: 100%;
+            border-bottom: $size-03 solid var(--tab-list-color);
+            cursor: pointer;
+            color: var(--tab-list-color);
+            transition: 0.5s;
+            h3 {
+                font-size: $font-size-2_5;
+                @include screen-max-width-600 {
+                    font-size: $font-size-2;
+                }
+                @include screen-max-width-400 {
+                    font-size: $font-size-1_5;
+                }
+            }
+        }
+        .resume_list:nth-child(2) {
+            justify-content: center;
+        }
+        .resume_list:nth-child(3) {
+            justify-content: flex-end;
+        }
+    }
+    .tab_wrapper {
+        position: relative;
+        width: 100%;
+        height: 55%;
+        @include screen-max-width-600 {
+            height: 60%;
+        }
+        @include screen-max-width-400 {
+            height: 65%;
+        }
+        .tab_item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: var(--third-bg-color);
+            border-radius: $size-08;
+            padding: $size-1;
+            color: var(--white-color);
+            h4 {
+                font-size: $font-size-2_3;
+                @include screen-max-width-400 {
+                    font-size: $font-size-2;
+                }
+            }
+        }
+    }
+}
+.tab_grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($size-22, 1fr));
+    gap: $size-2;
+    overflow-y: auto;
+    overflow-x: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.8);
+}
+.tab_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--third-bg-color);
+    border-radius: $size-08;
+    padding: $size-1;
+    color: var(--white-color);
+    height: $size-15;
+}
+.tab_list.resume_list.active {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+.tab_grid.resume_box.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.5s;
+    padding: $size-1;
+    @include screen-max-width-400 {
+        padding: 0;
+    }
+}
+.resume_box.skills {
+    grid-template-columns: repeat(auto-fit, minmax($size-20, 1fr));
+}
+.resume_item h4:nth-child(1),
+.resume_item h4:nth-child(3) {
+    font-size: $font-size-1_7;
+    color: var(--main-color);
+    font-weight: $font-weight-400;
+}
+.resume_item h4:nth-child(3) {
+    position: relative;
+    color: var(--white-color);
+    margin-left: $size-2;
+}
+.resume_item h4:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    left: $size-_02;
+    top: 50%;
+    transform: translateY(-50%);
+    width: $size-1;
+    height: $size-1;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.skills .resume_item {
+    align-items: center;
+}
+.resume_item svg {
+    font-size: $font-size-8;
+    transition: 0.3s;
+}
+.resume_item:hover svg {
+    color: var(--main-color);
+}
+.tab_item h4 {
+    font-size: $font-size-2_3;
+}
+.resume_item p {
+    margin-top: $size-1;
+}
+.section .resume .active {
+    visibility: visible;
+}

@@ -1,0 +1,155 @@
+@import './../../assets/style/variables.scss';
+@import './../../assets/style/mixin.scss';
+
+.section.contact {
+    visibility: visible;
+}
+
+.contact {
+    padding-top: $size-2;
+    padding-bottom: $size-18;
+    @include screen-max-width-991 {
+        padding-top: $size-1_5;
+
+    }
+    @include screen-max-width-768 {
+        padding-bottom: $size-16;
+    }
+    @include screen-max-width-600 {
+        padding: $size-1;
+    }
+
+    h2 {
+        color: var(--title-color);
+        text-align: center;
+        font-size: $font-size-3;
+        padding-top: $size-2;
+        @include screen-max-width-1200 {
+            padding-top: $size-1;
+        }
+        @include screen-max-width-600 {
+            font-size: $font-size-2;
+        }
+        @include screen-max-width-400 {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .contact_wrapper {
+
+        .contact_form {
+            width: $size-70;
+
+            h3 {
+                text-align: center;
+                font-size: $font-size-3;
+                color: var(--main-color);
+                margin-bottom: $size-1;
+                @include screen-max-width-1200 {
+                    font-size: $font-size-2;
+                }
+                @include screen-max-width-400 {
+                    font-size: $font-size-1;
+                }
+            }
+
+            .field_box {
+                gap: $size-1_5;
+                @include screen-max-width-1200 {
+                    gap: $size-1;
+                }
+
+                .inputBox {
+                    position: relative;
+                    width: 250px;
+                    span {
+                        position: absolute;
+                        left: 0;
+                        padding: 10px;
+                        pointer-events: none;
+                        font-size: 1em;
+                        color: rgba(255,255,255,0.25);
+                        text-transform: uppercase;
+                        transition: 0.5s;
+                    }
+                    input,
+                    textarea {
+                        width: 100%;
+                        // padding:10px;
+                        border: 1px solid rgba(255,255,255,0.25);
+                        background: #1d2d3a;
+                        outline: none;
+                        color: #fff;
+                        font-size: 1em;
+                        flex: 1 1 $size-30;
+                        padding: $size-1_5;
+                        background: var(--third-bg-color);
+                        border-radius: $size-06;
+                        font-size: $font-size-1_2;
+                        color: var(--white-color);
+                        outline: none;
+                        transition: 0.5s;
+                        @include screen-max-width-1200 {
+                            flex: 1 1 $size-25;
+                        }
+                        @include screen-max-width-991 {
+                            flex: 1 1 $size-20;
+                        }
+                        @include screen-max-width-768 {
+                            flex: 1 1 $size-20;
+                        }
+                        @include screen-max-width-400 {
+                            width: 100%;
+                        }
+                        &:focus ~ span,
+                        &:valid ~span {
+                            color: #00dfc4;
+                            transform: translateX(15px) translateY(-15px);
+                            font-size: 0.65em;
+                            // padding: 0 10px ;
+                            background: #1d2d3a;
+                            border-left: 1px solid #00dfc4;
+                            border-right: 1px solid #00dfc4;
+                            letter-spacing: 0.2em;
+                        }
+                        &:focus,
+                        &:valid {
+                            border: 1px solid #00dfc4;
+                        }
+                    }
+                }
+                textarea {
+                    height: $size-15;
+                    resize: none;
+                    @include screen-max-width-768 {
+                        height: $size-8;
+                    }
+                }
+            }
+
+            .contact_btn {
+                margin-top: $size-2;
+                display: flex;
+                justify-content: center;
+
+                .btn {
+                    cursor: pointer;
+                    padding: $size-1_2 $size-3;
+                    background: var(--main-color);
+                    border-radius: $size-5;
+                    box-shadow: 0 0 $size-1 var(--main-color);
+                    font-size: $font-size-1_6;
+                    color: var(--bg-color);
+                    font-weight: 600;
+                    transition: 0.3s;
+                    @include screen-max-width-768 {
+                        padding: $size-1_2 $size-2;
+                    }
+                    &:hover {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
