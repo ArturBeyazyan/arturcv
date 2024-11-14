@@ -35,7 +35,6 @@
 
         border-radius: $size-5;
         z-index: 100;
-
         .nav_list {
             li {
                 @include screen-max-width-768 {
@@ -59,6 +58,9 @@
                 }
 
                 .tooltip {
+                    @include screen-max-width-400 {
+                        left: 100%;
+                    }
                     position: absolute;
                     top: $size-_04;
                     left: 50%;
@@ -73,6 +75,7 @@
                     visibility: hidden;
                     opacity: 0;
                     transition: .3s;
+
                 }
 
                 svg {
@@ -85,6 +88,9 @@
 
             li:hover .tooltip,
             a:hover .tooltip {
+                width: 8rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 visibility: visible;
                 opacity: 1;
             }

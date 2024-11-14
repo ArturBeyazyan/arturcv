@@ -18,9 +18,11 @@ export const Contact = (props) => {
         setIsLoading(true)
         // setActive(!active)
     }
-    const [formData,setFormData] = useState({firstName: "", lastName: "", email: "", message: "",phone:""})
-    const [errors,setErrors] = useState({})
-    
+    const [formData,
+        setFormData] = useState({firstName: "", lastName: "", email: "", message: "", phone: ""})
+    const [errors,
+        setErrors] = useState({})
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const ValidationError = validateForm(formData)
@@ -41,7 +43,7 @@ export const Contact = (props) => {
     };
     // const isValidPhoneNumber = (phoneNumber) => {     // Regular expression for
     // basic phone number validation (10 digits)     const phoneRegex = /^\d{10}$/;
-    //   return phoneRegex.test(phoneNumber); };
+    //  return phoneRegex.test(phoneNumber); };
     const validateForm = (data) => {
         let errors = {}
         if (!data.firstName) {
@@ -65,32 +67,23 @@ export const Contact = (props) => {
     function PhoneNumber(value) {
         if (!value) 
             return value
-         const number = value.replace(/[^\d]/g, '');
+        const number = value.replace(/[^\d]/g, '');
         const numberLenght = number.length;
         if (numberLenght < 4) 
-            return number 
+            return number
         if (numberLenght < 7) {
-                return `(${number.slice(0, 3)}) ${number.slice(3)}`;
-            }
-        return`(${number.slice(0, 3)})${number.slice(3, 6)}-${number.slice(6, 9)}`
+            return `(${number.slice(0, 3)}) ${number.slice(3)}`;
+        }
+        return `(${number.slice(0, 3)})${number.slice(3, 6)}-${number.slice(6, 9)}`
     }
-    // const serviceId = 'service_fku2x4h' 
-    // const templateID = 'template_gx6b0i2'
-    //  const publicKey = 'gXxhCD4Q4Zc3eP2SN'
-    //   const templateParams = {
-    //     from_name: firstName,
-    //     to_name: 'ARTUR',
-    //     from_phone: phone,
-    //     from_email: email,
-    //     message: message
-    // }
-    // emailjs
-    //     .sendForm(serviceId, templateID, templateParams, publicKey,)
-    //     .then((response) => {
-    //         console.log('fgfgfdgdgdfgdfgdfgdfgdfgdfgd', response);
-    //         setFirstName('')
-    //         setLastName('')setPhone('')setEmail('')setMessage('')
-    //     })
+    // const serviceId = 'service_fku2x4h' const templateID = 'template_gx6b0i2'
+    // const publicKey = 'gXxhCD4Q4Zc3eP2SN'   const templateParams = {
+    // from_name: firstName,     to_name: 'ARTUR',     from_phone: phone,
+    // from_email: email,     message: message } emailjs     .sendForm(serviceId,
+    // templateID, templateParams, publicKey,)     .then((response) => {
+    // console.log('fgfgfdgdgdfgdfgdfgdfgdfgdfgd', response);
+    // setFirstName('')
+    // setLastName('')setPhone('')setEmail('')setMessage('')     })
 
     return (
         <section
@@ -111,6 +104,7 @@ export const Contact = (props) => {
                                 onChange={handleChange}
                                 value={formData.firstName}/>
                             <span>{t("FName")}</span>
+                            <i></i>
                             {errors.firstName && (
                                 <div className="error">{errors.firstName}</div>
                             )}
@@ -123,49 +117,33 @@ export const Contact = (props) => {
                                 onChange={handleChange}
                                 value={formData.lastName}/>
                             <span>{t("LName")}</span>
+                            <i></i>
                             {errors.lastName && (
                                 <div className="error">{errors.lastName}</div>
                             )}
                         </div>
-                        {/* <div className='inputBox'>
-                            <PhoneInput
-                                country={'us'}
-                                value={phoneNumber}
-                              name={phone}
-                                inputProps={{required: true}}
-                                onChange={handleChange}/> 
-                            <span>{t("Phone")}</span>
-                            {errors.phone && (
-                                <div className="error">{errors.phone}</div>
-                            )}
-                        </div> */}
-                        <PhoneInput
-                            country={"AM"}
-                            value={formData.phone}
-                            name="phone"
-                            onChange={handleChange}
-      />
                         <div className='inputBox'>
-                            <input
-                                type={"email"}
-                                name="email"
-                                required="required"
-                                onChange={handleChange}
-                                value={formData.email}/>
-                            <span>{t("Email")}</span>
-                            {errors.email && (
-                                <div className="error">{errors.email}</div>
-                            )}
+                            <input type={"tel"}name="phone"required="required"onChange={handleChange}value={formData.phone}/>
+                            <span>{t("Phone")}</span>
+                            <i></i>
+                            {errors.phone && (<div className="error">{errors.phone}</div>)}
                         </div>
                         <div className='inputBox'>
+                            <input type={"email"}name="email"required="required"onChange={handleChange}value={formData.email}/>
+                            <span>{t("Email")}</span>
+                            <i></i>
+                            {errors.email && (<div className="error">{errors.email}</div>)}
+                        </div>
+                        <div className='inputBox inputBox_area '>
                             <textarea
-                                cols="30"
-                                rows="10"
+                              
+                              
                                 name="message"
                                 onChange={handleChange}
                                 required="required"
                                 value={formData.message}></textarea>
                             <span>{t('YourMessage')}</span>
+                            <i></i>
                             {errors.message && (
                                 <div className="error">{errors.message}</div>
                             )}

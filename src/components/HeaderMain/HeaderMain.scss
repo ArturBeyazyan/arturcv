@@ -161,6 +161,10 @@
                 width: $size-20;
                 height: $size-20;
             }
+            @include screen-max-width-400{
+                width:$size-15;
+                height: $size-15;
+            }
             img {
                 position: absolute;
                 top: $size-3;

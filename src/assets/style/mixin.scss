@@ -9,6 +9,11 @@
         @content;
     }
 }
+@mixin screen-max-width-800{
+    @media (max-width : $max-width-800){
+       @content;
+   }
+}
 @mixin screen-max-width-768 {
      @media (max-width : $max-width-768){
         @content;

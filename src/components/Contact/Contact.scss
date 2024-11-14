@@ -23,107 +23,195 @@
         color: var(--title-color);
         text-align: center;
         font-size: $font-size-3;
-        padding-top: $size-2;
-        @include screen-max-width-1200 {
-            padding-top: $size-1;
-        }
+        padding-top: $size-3;
+        // @include screen-max-width-1200 {
+        //     padding-top: $size-1;
+        // }
         @include screen-max-width-600 {
             font-size: $font-size-2;
-        }
-        @include screen-max-width-400 {
-            padding-bottom: 1rem;
         }
     }
 
     .contact_wrapper {
 
         .contact_form {
-            width: $size-70;
-
+            // width: $size-70;
+            position: absolute;
+            // inset: 4px;
+            // background: #222;
+            // padding: 50px 40px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include screen-max-width-1200 {
+                width: 100%;
+            }
             h3 {
                 text-align: center;
-                font-size: $font-size-3;
+                font-size: $font-size-2;
                 color: var(--main-color);
                 margin-bottom: $size-1;
                 @include screen-max-width-1200 {
                     font-size: $font-size-2;
                 }
-                @include screen-max-width-400 {
+                @include screen-max-width-600 {
                     font-size: $font-size-1;
+                    margin-bottom:$size-1;
                 }
+                
+                
             }
 
             .field_box {
-                gap: $size-1_5;
+                width: 50rem;
+                justify-content: center;
+                gap: $size-2;
                 @include screen-max-width-1200 {
-                    gap: $size-1;
+                    gap: $size-2;
                 }
-
+                @include screen-max-width-800 {
+                    width:100%;
+                }
+                @include screen-max-width-768 {
+                    width: 100%;
+                }
+                @include screen-max-width-600 {
+                   padding: 0 3rem;
+                }
                 .inputBox {
+                    // position: relative;
+                    width: 16rem;
+
                     position: relative;
-                    width: 250px;
+                    // width: 300px;
+                    margin-top: 20px;
+                    @include screen-max-width-768 {
+                        margin-top: 10px;
+                    }
+                    @include screen-max-width-600 {
+                        width: 100%;
+                    }
                     span {
+                        // position: absolute;
+                        // left: 0;
+                        // padding: 10px;
+                        // pointer-events: none;
+                        // font-size: 1em;
+                        // color: rgba(255,255,255,0.25);
+                        // text-transform: uppercase;
+                        // transition: 0.5s;
+
                         position: absolute;
                         left: 0;
-                        padding: 10px;
+                        padding: 20px 0 10px;
                         pointer-events: none;
-                        font-size: 1em;
-                        color: rgba(255,255,255,0.25);
-                        text-transform: uppercase;
+                        color: #8f8f8f;
+                        font-size: 16px;
+                        letter-spacing: 1px;
                         transition: 0.5s;
+                        z-index: 10;
                     }
                     input,
                     textarea {
-                        width: 100%;
+                       
+                        // width: 100%;
                         // padding:10px;
-                        border: 1px solid rgba(255,255,255,0.25);
-                        background: #1d2d3a;
+                        // border: 1px solid rgba(255,255,255,0.25);
+                        // background: #1d2d3a;
+                        // outline: none;
+                        // color: #fff;
+                        // font-size: 1em;
+                        
+                        // padding: $size-1_5;
+                        // background: var(--third-bg-color);
+                        // border-radius: $size-06;
+                        // font-size: $font-size-1_2;
+                        // color: var(--white-color);
+                        // outline: none;
+                        // transition: 0.5s;
+                        flex: 1 1 30rem;
+                        position: relative;
+                        width: 100%;
+                        padding: 20px 10px;
+                        background: transparent;
+                        border: none;
                         outline: none;
-                        color: #fff;
-                        font-size: 1em;
-                        flex: 1 1 $size-30;
-                        padding: $size-1_5;
-                        background: var(--third-bg-color);
-                        border-radius: $size-06;
-                        font-size: $font-size-1_2;
+                        box-shadow: none;
                         color: var(--white-color);
-                        outline: none;
+                        font-size: $font-size-1_2;
+                        letter-spacing: 1px;
                         transition: 0.5s;
-                        @include screen-max-width-1200 {
-                            flex: 1 1 $size-25;
-                        }
-                        @include screen-max-width-991 {
-                            flex: 1 1 $size-20;
-                        }
-                        @include screen-max-width-768 {
-                            flex: 1 1 $size-20;
-                        }
-                        @include screen-max-width-400 {
-                            width: 100%;
-                        }
+                        z-index: 10;
                         &:focus ~ span,
-                        &:valid ~span {
-                            color: #00dfc4;
-                            transform: translateX(15px) translateY(-15px);
-                            font-size: 0.65em;
-                            // padding: 0 10px ;
-                            background: #1d2d3a;
-                            border-left: 1px solid #00dfc4;
-                            border-right: 1px solid #00dfc4;
-                            letter-spacing: 0.2em;
+                        &:valid ~ span {
+                            color: #fff;
+                            font-size: 12px;
+                            transform: translateY(-34px);
                         }
-                        &:focus,
-                        &:valid {
-                            border: 1px solid #00dfc4;
+
+                        // @include screen-max-width-1200 {
+                        //     flex: 1 1 $size-25;
+                        // }
+                        // @include screen-max-width-991 {
+                        //     flex: 1 1 $size-20;
+                        // }
+                        // @include screen-max-width-768 {
+                        //     flex: 1 1 $size-20;
+                        // }
+                        @include screen-max-width-400 {
+                            padding: 15px 5px;
+                        }
+                        // &:focus ~ span,
+                        // &:valid ~span {
+                        //     color: #00dfc4;
+                        //     transform: translateX(15px) translateY(-15px);
+                        //     font-size: 0.65em;
+                        //     // padding: 0 10px ;
+                        //     background: #1d2d3a;
+                        //     border-left: 1px solid #00dfc4;
+                        //     border-right: 1px solid #00dfc4;
+                        //     letter-spacing: 0.2em;
+                        // }
+                        // &:focus,
+                        // &:valid {
+                        //     border: 1px solid #00dfc4;
+                        // }
+                    }
+
+                    i {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 2px;
+                        background: #fff;
+                        border-radius: 4px;
+                        overflow: hidden;
+                        transition: 0.5s;
+                        pointer-events: none;
+                        &:focus ~ i,
+                        &:valid ~ i {
+                            height: 44px;
                         }
                     }
                 }
-                textarea {
-                    height: $size-15;
-                    resize: none;
-                    @include screen-max-width-768 {
-                        height: $size-8;
+                .inputBox_area{
+                     width: 34rem;
+                     @include screen-max-width-600 {
+                        width: 100%;
                     }
+                }
+                textarea {
+                    height: $size-5;
+                    resize: none;
+                    // @include screen-max-width-768 {
+                    //     height: $size-8;
+                    // }
+                    // @include screen-max-width-600 {
+                    //     height: $size-5;
+                    // }
                 }
             }
 
@@ -133,20 +221,25 @@
                 justify-content: center;
 
                 .btn {
-                    cursor: pointer;
+                    @include screen-max-width-1200 {
+                        font-size: $font-size-1;
+                    }
+                    @include screen-max-width-400 {
+                        padding: $size-1 $size-1;
+                        font-weight: $font-weight-400;
+                    }
                     padding: $size-1_2 $size-3;
                     background: var(--main-color);
                     border-radius: $size-5;
                     box-shadow: 0 0 $size-1 var(--main-color);
                     font-size: $font-size-1_6;
-                    color: var(--bg-color);
-                    font-weight: 600;
+                    font-weight: $font-weight-600;
                     transition: 0.3s;
-                    @include screen-max-width-768 {
-                        padding: $size-1_2 $size-2;
-                    }
                     &:hover {
                         box-shadow: none;
+                    }
+                    a {
+                        color: var(--bg-color);
                     }
                 }
             }
