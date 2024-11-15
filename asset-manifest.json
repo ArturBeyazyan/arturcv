@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/arturcv.git/static/css/main.eac534e2.css",
-    "main.js": "/arturcv.git/static/js/main.c0174170.js",
-    "static/media/Artur_Beyazyan.pdf": "/arturcv.git/static/media/Artur_Beyazyan.fd0046627f4efd10543d.pdf",
-    "static/media/Montserratarm-SemiBold.otf": "/arturcv.git/static/media/Montserratarm-SemiBold.d08059a6b831354c2276.otf",
-    "static/media/Montserratarm-Bold.otf": "/arturcv.git/static/media/Montserratarm-Bold.2733913afd5dde28d49e.otf",
-    "static/media/Montserratarm-ExtraBold.otf": "/arturcv.git/static/media/Montserratarm-ExtraBold.1c2c9c2a164151d5265d.otf",
-    "static/media/Montserratarm-Medium.otf": "/arturcv.git/static/media/Montserratarm-Medium.00bad467823fc192af2c.otf",
-    "static/media/Montserratarm-Regular.otf": "/arturcv.git/static/media/Montserratarm-Regular.5691450002b4287d010a.otf",
-    "static/media/Montserratarm-Black.otf": "/arturcv.git/static/media/Montserratarm-Black.b2de9c93dc44679a029c.otf",
-    "static/media/Montserratarm-Light.otf": "/arturcv.git/static/media/Montserratarm-Light.5aeadeac62599fbeaca3.otf",
-    "static/media/Montserratarm-ExtraLight.otf": "/arturcv.git/static/media/Montserratarm-ExtraLight.45ce171108961d4acacf.otf",
-    "static/media/Montserratarm-Thin.otf": "/arturcv.git/static/media/Montserratarm-Thin.da85776987743b2d266c.otf",
-    "static/media/todo.png": "/arturcv.git/static/media/todo.1943f41d3814eda13545.png",
-    "static/media/bubble.png": "/arturcv.git/static/media/bubble.817a58c1d0c2036b4485.png",
-    "static/media/users.png": "/arturcv.git/static/media/users.6cdbfc7c5dcf7f90674b.png",
-    "static/media/Sun.svg": "/arturcv.git/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
-    "static/media/Moon.svg": "/arturcv.git/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
-    "index.html": "/arturcv.git/index.html",
-    "main.eac534e2.css.map": "/arturcv.git/static/css/main.eac534e2.css.map",
-    "main.c0174170.js.map": "/arturcv.git/static/js/main.c0174170.js.map"
+    "main.css": "/arturcv/static/css/main.ec0add53.css",
+    "main.js": "/arturcv/static/js/main.e41803da.js",
+    "static/media/Artur_Beyazyan.pdf": "/arturcv/static/media/Artur_Beyazyan.fd0046627f4efd10543d.pdf",
+    "static/media/Montserratarm-SemiBold.otf": "/arturcv/static/media/Montserratarm-SemiBold.d08059a6b831354c2276.otf",
+    "static/media/Montserratarm-Bold.otf": "/arturcv/static/media/Montserratarm-Bold.2733913afd5dde28d49e.otf",
+    "static/media/Montserratarm-ExtraBold.otf": "/arturcv/static/media/Montserratarm-ExtraBold.1c2c9c2a164151d5265d.otf",
+    "static/media/Montserratarm-Medium.otf": "/arturcv/static/media/Montserratarm-Medium.00bad467823fc192af2c.otf",
+    "static/media/Montserratarm-Regular.otf": "/arturcv/static/media/Montserratarm-Regular.5691450002b4287d010a.otf",
+    "static/media/Montserratarm-Black.otf": "/arturcv/static/media/Montserratarm-Black.b2de9c93dc44679a029c.otf",
+    "static/media/Montserratarm-Light.otf": "/arturcv/static/media/Montserratarm-Light.5aeadeac62599fbeaca3.otf",
+    "static/media/Montserratarm-ExtraLight.otf": "/arturcv/static/media/Montserratarm-ExtraLight.45ce171108961d4acacf.otf",
+    "static/media/Montserratarm-Thin.otf": "/arturcv/static/media/Montserratarm-Thin.da85776987743b2d266c.otf",
+    "static/media/todo.png": "/arturcv/static/media/todo.1943f41d3814eda13545.png",
+    "static/media/bubble.png": "/arturcv/static/media/bubble.817a58c1d0c2036b4485.png",
+    "static/media/users.png": "/arturcv/static/media/users.6cdbfc7c5dcf7f90674b.png",
+    "static/media/Sun.svg": "/arturcv/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
+    "static/media/Moon.svg": "/arturcv/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
+    "index.html": "/arturcv/index.html",
+    "main.ec0add53.css.map": "/arturcv/static/css/main.ec0add53.css.map",
+    "main.e41803da.js.map": "/arturcv/static/js/main.e41803da.js.map"
   },
   "entrypoints": [
-    "static/css/main.eac534e2.css",
-    "static/js/main.c0174170.js"
+    "static/css/main.ec0add53.css",
+    "static/js/main.e41803da.js"
   ]
 }
