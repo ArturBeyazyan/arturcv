@@ -1,4 +1,4 @@
-import {FaArrowLeft, FaGithub, FaCode} from "react-icons/fa";
+import {FaArrowLeft, FaGithub} from "react-icons/fa";
 import {useTranslation} from 'react-i18next';
 import works from '../../json/works.json'
 import { NavLink } from "react-router-dom";
