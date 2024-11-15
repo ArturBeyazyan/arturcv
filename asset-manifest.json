@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ArturBeyazyan/arturcv.git/static/css/main.39c5ff6b.css",
+    "main.js": "/ArturBeyazyan/arturcv.git/static/js/main.ba61cb16.js",
+    "static/media/Artur_Beyazyan.pdf": "/ArturBeyazyan/arturcv.git/static/media/Artur_Beyazyan.fd0046627f4efd10543d.pdf",
+    "static/media/Montserratarm-SemiBold.otf": "/ArturBeyazyan/arturcv.git/static/media/Montserratarm-SemiBold.d08059a6b831354c2276.otf",
+    "static/media/Montserratarm-Bold.otf": "/ArturBeyazyan/arturcv.git/static/media/Montserratarm-Bold.2733913afd5dde28d49e.otf",
+    "static/media/Montserratarm-ExtraBold.otf": "/ArturBeyazyan/arturcv.git/static/media/Montserratarm-ExtraBold.1c2c9c2a164151d5265d.otf",
+    "static/media/Montserratarm-Medium.otf": "/ArturBeyazyan/arturcv.git/static/media/Montserratarm-Medium.00bad467823fc192af2c.otf",
+    "static/media/Montserratarm-Regular.otf": "/ArturBeyazyan/arturcv.git/static/media/Montserratarm-Regular.5691450002b4287d010a.otf",
+    "static/media/Montserratarm-Black.otf": "/ArturBeyazyan/arturcv.git/static/media/Montserratarm-Black.b2de9c93dc44679a029c.otf",
+    "static/media/Montserratarm-Light.otf": "/ArturBeyazyan/arturcv.git/static/media/Montserratarm-Light.5aeadeac62599fbeaca3.otf",
+    "static/media/Montserratarm-ExtraLight.otf": "/ArturBeyazyan/arturcv.git/static/media/Montserratarm-ExtraLight.45ce171108961d4acacf.otf",
+    "static/media/Montserratarm-Thin.otf": "/ArturBeyazyan/arturcv.git/static/media/Montserratarm-Thin.da85776987743b2d266c.otf",
+    "static/media/todo.png": "/ArturBeyazyan/arturcv.git/static/media/todo.1943f41d3814eda13545.png",
+    "static/media/bubble.png": "/ArturBeyazyan/arturcv.git/static/media/bubble.817a58c1d0c2036b4485.png",
+    "static/media/users.png": "/ArturBeyazyan/arturcv.git/static/media/users.6cdbfc7c5dcf7f90674b.png",
+    "static/media/Sun.svg": "/ArturBeyazyan/arturcv.git/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
+    "static/media/Moon.svg": "/ArturBeyazyan/arturcv.git/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
+    "index.html": "/ArturBeyazyan/arturcv.git/index.html",
+    "main.39c5ff6b.css.map": "/ArturBeyazyan/arturcv.git/static/css/main.39c5ff6b.css.map",
+    "main.ba61cb16.js.map": "/ArturBeyazyan/arturcv.git/static/js/main.ba61cb16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39c5ff6b.css",
+    "static/js/main.ba61cb16.js"
+  ]
+}
