@@ -89,10 +89,15 @@
             li:hover .tooltip,
             a:hover .tooltip {
                 width: 8rem;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                // overflow: hidden;
+                // text-overflow: ellipsis;
                 visibility: visible;
                 opacity: 1;
+                @include screen-max-width-400 {
+                    width: 6rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
         }
     }

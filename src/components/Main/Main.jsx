@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react'
+// import React, { useEffect,useState } from 'react'
 import { About } from '../About/About'
 import { Resume } from '../Resume/Resume'
 import { Contact } from '../Contact/Contact'
