@@ -1,5 +1,7 @@
 @import '../../assets/style/variables.scss';
 @import '../../assets/style/normalize.scss';
+@import '../../assets/style/mixin.scss';
+
 
 .container {
 
@@ -18,12 +20,12 @@
         justify-content: flex-end;
         align-items: center;
 
+        @include screen-max-width-600 {
+            justify-content: space-between;
+        }
         .container_language {
             padding:$size-1 ;
         }
-
-      
-
         .container_time {
             color: var(--main-color);
         }

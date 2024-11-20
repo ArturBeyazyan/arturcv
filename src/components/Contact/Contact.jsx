@@ -42,7 +42,7 @@ export const Contact = (props) => {
             newError.message = "First name is required"
         }
         setErrors(newError);
-        return Object.keys(newError).length === 0
+        return Object.keys(newError).length < 1
     }
     const sendEmail = (e) => {
         emailjs
@@ -50,10 +50,10 @@ export const Contact = (props) => {
             .then(() => {
                 if ('SUCCESS') {
                     window.location.reload(false)
-                    console.log('SUCCESS');
+                    // console.log('SUCCESS');
                 }
             }, (error) => {
-                console.log('FAILED...', error.text);
+                // console.log('FAILED...', error.text);
             },);
     };
     const handleSubmit = (e) => {
@@ -62,9 +62,9 @@ export const Contact = (props) => {
         if (isValid) {
             sendEmail(formData)
             // window.location.reload(false)
-            console.log("Form Submitted", formData);
+            // console.log("Form Submitted", formData);
         } else {
-            console.log("Form Validation Failed");
+            // console.log("Form Validation Failed");
         }
     }
     const handleChange = (e) => {
@@ -76,9 +76,7 @@ export const Contact = (props) => {
     }
     return (
         <section
-            className={`section contact ${props.active === 5
-            ? "active"
-            : ""}`}>
+            className={`section contact ${props.active === 5 ? "active": ""}`}>
             <h2>{t("Contact")}</h2>
             <div className="contact_wrapper G-justify-center">
                 <form onSubmit={handleSubmit} className='contact_form ' ref={form}>
@@ -93,7 +91,7 @@ export const Contact = (props) => {
                                 value={formData.from_name}/>
                             <span>{t("FName")}</span>
                             <i></i>
-                            {/* {errors || errors.from_name && (<div className="error">{errors.from_name}</div>)} */}
+                            {/* {errors.from_name && (<div className="error">{errors.from_name}</div>)} */}
                         </div>
                         <div className='inputBox'>
                             <input
@@ -107,7 +105,6 @@ export const Contact = (props) => {
                             {/* {errors.from_lastName && (<div className="error">{errors.from_lastName}</div>)} */}
                         </div>
                         <div className='inputBox'>
-
                             <input
                                 required="required"
                                 onChange={handleChange}
@@ -116,7 +113,6 @@ export const Contact = (props) => {
                                 type="number"/>
                             <span>{t("Phone")}</span>
                             <i></i>
-                            
                         </div>
                         <div className='inputBox'>
                             <input
@@ -127,9 +123,7 @@ export const Contact = (props) => {
                                 type="text"/>
                             <span>{t("Email")}</span>
                             <i></i>
-                            {/* {errors && (
-                                <div className="error">{errors.from_email}</div>
-                            )} */}
+                            {/* {errors && (<div className="error">{errors.from_email}</div>)} */}
                         </div>
                         <div className='inputBox inputBox_area '>
                             <textarea
@@ -139,9 +133,7 @@ export const Contact = (props) => {
                                 value={formData.message}></textarea>
                             <span>{t('YourMessage')}</span>
                             <i></i>
-                            {/* {errors && (
-                                <div className="error">{errors.message}</div>
-                            )} */}
+                            {/* {errors && (<div className="error">{errors.message}</div>)} */}
                         </div>
                     </div>
                     <div className="contact_btn">

@@ -6,9 +6,7 @@ export const Work = (props) => {
     const {t} = useTranslation()
     return (
         <div
-            className={`tab_grid work portfolio_box ${props.active === 1
-            ? "active"
-            : ""}`}>
+            className={`tab_grid work portfolio_box ${props.active === 1 ? "active": ""}`}>
             {works && works.map((el, id) => {
                 return (
                     <div className="tab_item portfolio_item">
@@ -23,7 +21,7 @@ export const Work = (props) => {
                             </div>
                             <div className="portfolio_icon work_icon">
                                 <NavLink to={el.preview_url} target="_blank"><FaArrowLeft/>
-                                        <span className='tooltip'>{t(el.path_Preview)}</span>
+                                    <span className='tooltip'>{t(el.path_Preview)}</span>
                                 </NavLink>
                                 <NavLink to={el.git_url} target="_blank"><FaGithub/>
                                     <span className='tooltip'>{t(el.path_git)}</span>

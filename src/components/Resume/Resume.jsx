@@ -27,7 +27,6 @@ export const Resume = (props) => {
          <Experience active={active}/>
          <Skills active={active}/>
          <Education active={active}/>
-         
         </div>
     </section>
     </>

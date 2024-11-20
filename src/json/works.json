@@ -7,8 +7,8 @@
         "tech_skills":"SASS",
         "path_git": "GithubRepository",
         "path_Preview": "Preview",
-        "git_url":"https://github.com/Artur5544-a/Todo",
-        "preview_url":"https://artur5544-a.github.io/Todo/"
+        "git_url":"https://github.com/ArturBeyazyan/Todo",
+        "preview_url":"https://arturbeyazyan.github.io/Todo/"
     }, {
         "id": 2,
         "img": "bubble",
@@ -16,7 +16,29 @@
         "tech_used": "REACT",
         "path_git": "GithubRepository",
         "path_Preview": "Preview",
-        "git_url":"https://github.com/Artur5544-a/BubbelSort",
-        "preview_url":"https://artur5544-a.github.io/BubbelSort/"
+        "git_url":"https://github.com/ArturBeyazyan/BubbelSort",
+        "preview_url":"https://arturbeyazyan.github.io/BubbelSort/"
+    }, {
+        "id": 3,
+        "img": "Car",
+        "title": "Ridex",
+        "tech_used": "HTML/CSS",
+        "tech_skills":"JAVASCRIPT",
+        "path_git": "GithubRepository",
+        "path_Preview": "Preview",
+        "git_url":"https://github.com/ArturBeyazyan/Ridex",
+        "preview_url":"https://arturbeyazyan.github.io/Ridex/"
+    },
+    {
+        "id": 4,
+        "img": "2048",
+        "title": "2048",
+        "tech_used": "HTML/CSS",
+        "tech_skills":"JAVASCRIPT",
+        "path_git": "GithubRepository",
+        "path_Preview": "Preview",
+        "git_url":"https://github.com/ArturBeyazyan/2048",
+        "preview_url":"https://arturbeyazyan.github.io/2048/"
     }
+
 ]

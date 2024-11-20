@@ -1,8 +1,12 @@
 @import '../../assets/style/normalize.scss';
 @import '../../assets/style/variables.scss';
+@import '../../assets/style/mixin.scss';
 
 .globe {
     position: relative;
+    @include screen-max-width-600 {
+        display: flex;
+    }
     svg {
         color: var(--main-color);
         font-size: $size-2;
@@ -12,6 +16,9 @@
     .open {
         display: none;
         .flags {
+            @include screen-max-width-600 {
+                display: flex;
+            }
             button {
                 display: block;
                 border: none;
@@ -28,6 +35,8 @@
         position: absolute;
         right: 8px;
         display: block;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        @include screen-max-width-600 {
+            right: 0;
+        }
     }
 }
