@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/arturcv/static/css/main.38063840.css",
-    "main.js": "/arturcv/static/js/main.58df81d2.js",
+    "main.css": "/arturcv/static/css/main.0e49fcbb.css",
+    "main.js": "/arturcv/static/js/main.33f74265.js",
+    "static/media/Car.png": "/arturcv/static/media/Car.90a83b309a8f48a17b05.png",
+    "static/media/2048.png": "/arturcv/static/media/2048.7d06d828c0651db940f4.png",
     "static/media/Artur_Beyazyan.pdf": "/arturcv/static/media/Artur_Beyazyan.fd0046627f4efd10543d.pdf",
     "static/media/Montserratarm-SemiBold.otf": "/arturcv/static/media/Montserratarm-SemiBold.d08059a6b831354c2276.otf",
     "static/media/Montserratarm-Bold.otf": "/arturcv/static/media/Montserratarm-Bold.2733913afd5dde28d49e.otf",
@@ -18,11 +20,11 @@
     "static/media/Sun.svg": "/arturcv/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/arturcv/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/arturcv/index.html",
-    "main.38063840.css.map": "/arturcv/static/css/main.38063840.css.map",
-    "main.58df81d2.js.map": "/arturcv/static/js/main.58df81d2.js.map"
+    "main.0e49fcbb.css.map": "/arturcv/static/css/main.0e49fcbb.css.map",
+    "main.33f74265.js.map": "/arturcv/static/js/main.33f74265.js.map"
   },
   "entrypoints": [
-    "static/css/main.38063840.css",
-    "static/js/main.58df81d2.js"
+    "static/css/main.0e49fcbb.css",
+    "static/js/main.33f74265.js"
   ]
 }
