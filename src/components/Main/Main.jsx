@@ -33,7 +33,7 @@ export const Main = (props) => {
         </div> */}
       </div>
        <div className='box'style={{transform:`rotateY(${props.active * 0}deg)`}}>
-        <Routes>
+        <Routes basename="arturcv">
        <Route path="/" element={<HeaderMain active={props.active} />} />
        <Route path="/about" element={<About active={props.active} />} />
         <Route path="/resume" element={<Resume active={props.active}/>} />
