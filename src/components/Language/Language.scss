@@ -37,6 +37,8 @@
         display: block;
         @include screen-max-width-600 {
             right: 0;
+            position: static;
+            margin-top: $size-09;
         }
     }
 }
