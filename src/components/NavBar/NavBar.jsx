@@ -13,7 +13,7 @@ export const NavBar = (props) => {
         <nav className='nav'>
             <ul className='nav_list G-justify-evenly '>
                 <li onClick={() => props.activeList(1)}>
-                    <NavLink to='/'><GoHome/>
+                    <NavLink to='/arturcv'><GoHome/>
                         <span className='tooltip'>{t("Home")}</span>
                     </NavLink>
                 </li>
