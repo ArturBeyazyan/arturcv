@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/arturcv/static/css/main.980b3498.css",
-    "main.js": "/arturcv/static/js/main.c180eb52.js",
+    "main.css": "/arturcv/static/css/main.1c005513.css",
+    "main.js": "/arturcv/static/js/main.184fe76b.js",
     "static/media/Car.png": "/arturcv/static/media/Car.90a83b309a8f48a17b05.png",
     "static/media/Caffe.png": "/arturcv/static/media/Caffe.36629119aed5f67fab0f.png",
     "static/media/ProductFit.png": "/arturcv/static/media/ProductFit.5633ff7cd31b91de3926.png",
@@ -19,11 +19,11 @@
     "static/media/Sun.svg": "/arturcv/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/arturcv/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/arturcv/index.html",
-    "main.980b3498.css.map": "/arturcv/static/css/main.980b3498.css.map",
-    "main.c180eb52.js.map": "/arturcv/static/js/main.c180eb52.js.map"
+    "main.1c005513.css.map": "/arturcv/static/css/main.1c005513.css.map",
+    "main.184fe76b.js.map": "/arturcv/static/js/main.184fe76b.js.map"
   },
   "entrypoints": [
-    "static/css/main.980b3498.css",
-    "static/js/main.c180eb52.js"
+    "static/css/main.1c005513.css",
+    "static/js/main.184fe76b.js"
   ]
 }
