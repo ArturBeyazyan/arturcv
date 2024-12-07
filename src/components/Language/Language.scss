@@ -1,16 +1,15 @@
 @import '../../assets/style/normalize.scss';
 @import '../../assets/style/variables.scss';
 @import '../../assets/style/mixin.scss';
-
 .globe {
     position: relative;
+    padding: $size-1;
     @include screen-max-width-600 {
         display: flex;
     }
-    svg {
+    i {
         color: var(--main-color);
         font-size: $size-2;
-        margin: 10px;
         cursor: pointer;
     }
     .open {
@@ -33,12 +32,12 @@
     }
     .opensLenguage {
         position: absolute;
-        right: 8px;
+        right: 14px;
         display: block;
         @include screen-max-width-600 {
             right: 0;
             position: static;
-            margin-top: $size-09;
+            margin-top: $size-02;
         }
     }
 }

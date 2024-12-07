@@ -46,6 +46,11 @@
     justify-content: flex-end;
     display: flex;
 }
+.G-align-justify-end {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
 .G-align-center {
     align-items: center;
     display: flex;
@@ -66,4 +71,3 @@
     flex-wrap: wrap;
     display: flex;
 }
-

@@ -23,7 +23,6 @@ $size-05:.5rem;
 $size-06:.6rem;
 $size-08:.8rem;
 $size-09:.9rem;
-
 //size
 $size-1_2:1.2rem;
 $size-1_5:1.5rem;
@@ -49,9 +48,21 @@ $size-25:25rem;
 $size-27:27rem;
 $size-28:28rem;
 $size-30:30rem;
+$size-34:34rem;
 $size-35:35rem;
 $size-40:40rem;
 $size-70:70rem;
+//size % 
+$size-100:100%;
+$size-50:50%;
+//size VH vW
+$size-vw100:100vw;
+$size-vh100:100vh;
+
+//transition
+$transition-05:0.5s;
+$transition-03:0.3s;
+$transition-1:1s;
 //page withs
 $max-width-1200:1200px;
 $max-width-991:991px;

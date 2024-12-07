@@ -1,0 +1,162 @@
+@import './../../assets/style/variables.scss';
+@import './../../assets/style/mixin.scss';
+.section.contact {
+    visibility: visible;
+}
+.contact {
+    padding-top: $size-2;
+    padding-bottom: $size-18;
+    @include screen-max-width-991 {
+        padding-top: $size-1_5;
+    }
+    @include screen-max-width-768 {
+        padding-bottom: $size-16;
+    }
+    @include screen-max-width-600 {
+        padding: $size-1;
+    }
+    h2 {
+        @include screen-max-width-600 {
+            font-size: $font-size-2;
+        }
+    }
+    .contact_wrapper {
+        .contact_form {
+            position: absolute;
+            border-radius: 10px;
+            @include screen-max-width-1200 {
+                width: $size-100;
+            }
+            h3 {
+                text-align: center;
+                font-size: $font-size-2;
+                color: var(--main-color);
+                margin-bottom: $size-1;
+                @include screen-max-width-1200 {
+                    font-size: $font-size-2;
+                }
+                @include screen-max-width-600 {
+                    font-size: $font-size-1;
+                    margin-bottom: $size-1;
+                }
+            }
+            .field_box {
+                width: 50rem;
+                justify-content: center;
+                gap: $size-2;
+                @include screen-max-width-1200 {
+                    gap: $size-2;
+                }
+                @include screen-max-width-800 {
+                    width: $size-100;
+                }
+                @include screen-max-width-768 {
+                    width: $size-100;
+                }
+                @include screen-max-width-600 {
+                    padding: 0 $size-3;
+                }
+                .inputBox {
+                    width: $size-16;
+                    position: relative;
+                    margin-top: 20px;
+                    @include screen-max-width-768 {
+                        margin-top: 10px;
+                    }
+                    @include screen-max-width-600 {
+                        width: $size-100;
+                    }
+                    span {
+                        position: absolute;
+                        left: 0;
+                        padding: 20px 0 10px;
+                        pointer-events: none;
+                        color: #8f8f8f;
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        transition: $transition-05;
+                        z-index: 10;
+                    }
+                    input,
+                    textarea {
+                        flex: 1 1 $size-30;
+                        position: relative;
+                        width: $size-100;
+                        padding: 20px 10px;
+                        background: transparent;
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                        color: var(--white-color);
+                        font-size: $font-size-1_2;
+                        letter-spacing: 1px;
+                        transition: $transition-05;
+                        z-index: 10;
+                        &:focus ~ span,
+                        &:valid ~ span {
+                            color: #fff;
+                            font-size: 12px;
+                            transform: translateY(-34px);
+                        }
+                        @include screen-max-width-400 {
+                            padding: 15px 5px;
+                        }
+                    }
+                    i {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: $size-100;
+                        height: 2px;
+                        background: #fff;
+                        border-radius: 4px;
+                        overflow: hidden;
+                        transition: $transition-05;
+                        pointer-events: none;
+                        &:focus ~ i,
+                        &:valid ~ i {
+                            height: 44px;
+                        }
+                    }
+                }
+                .inputBox_area {
+                    width: $size-34;
+                    @include screen-max-width-600 {
+                        width: $size-100;
+                    }
+                }
+                textarea {
+                    height: $size-5;
+                    resize: none;
+                }
+            }
+            .contact_btn {
+                margin-top: $size-2;
+                display: flex;
+                justify-content: center;
+                .btn {
+                    @include screen-max-width-1200 {
+                        font-size: $font-size-1;
+                    }
+                    @include screen-max-width-400 {
+                        padding: $size-1;
+                        font-weight: $font-weight-400;
+                    }
+                    padding: $size-1_2 $size-3;
+                    background: var(--main-color);
+                    border-radius: $size-5;
+                    box-shadow: 0 0 $size-1 var(--main-color);
+                    font-size: $font-size-1_6;
+                    font-weight: $font-weight-600;
+                    transition: $transition-03;
+                    &:hover {
+                        box-shadow: none;
+                    }
+                    a {
+                        color: var(--bg-color);
+                    }
+                }
+            }
+        }
+    }
+}

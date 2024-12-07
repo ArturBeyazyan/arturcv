@@ -1,0 +1,12 @@
+@import '../../assets/style/variables.scss';
+@import '../../assets/style/normalize.scss';
+.Typewriter{
+    .Typewriter__wrapper{
+        font-size: $font-size-3;
+        color:#0ef;
+    }
+    .Typewriter__cursor{
+        font-size: $font-size-3;
+        color: #0ef;
+    }
+}

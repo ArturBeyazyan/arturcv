@@ -1,5 +1,5 @@
 @import url( 'https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import '../../assets/style/flex.scss';
+@import '../../assets/style/variables.scss';
 :root {
     --c0: #71a1ff;
     --c1: #4d85f6;
@@ -11,7 +11,6 @@
     --clr: 1;
     --hue: calc(30deg - (30deg * var(--clr)));
 }
-
 .Errors {
     width: 100vw;
     height: 100vh;
@@ -19,7 +18,6 @@
     perspective: 1000vmin;
     background: var(--c0);
 }
-
 body * {
     transform-style: preserve-3d;
 }
@@ -36,7 +34,7 @@ body * {
 }
 .cuboid .side {
     position: absolute;
-    top: 50%;
+    top: var();
     left: 50%;
     height: 100%;
     width: 100%;

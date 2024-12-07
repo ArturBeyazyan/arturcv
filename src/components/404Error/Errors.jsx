@@ -24,7 +24,7 @@ export const Errors = () => {
 				<div className="four">{t("4")}</div>
 				<div className="four">{t("4")}</div>
 				<div className="btn">
-				<NavLink to='/'>{t("BACK")}</NavLink>
+					<NavLink to='/'>{t("BACK")}</NavLink>
 				</div>
 			</div>
 		</div>

@@ -7,7 +7,6 @@
     left: 0;
     right: 0;
     z-index: 99;
-
     .popup {
         width: 400px;
         background: #fff;
@@ -19,20 +18,16 @@
         text-align: center;
         padding: 0 30px 30px;
         color: #333;
-
         svg {
-          font-size: 4rem;
+          font-size:$font-size-4;
         }
-
         h2 {
             color: #333;
             font-size: 38px;
-            font-weight: 500;
             margin: 30px 0 10px;
         }
-
         button {
-            width: 100%;
+            width:$size-100;
             margin-top: 50px;
             padding: 10px 0;
             background-color: #6fd649;

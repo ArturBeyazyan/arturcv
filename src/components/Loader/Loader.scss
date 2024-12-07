@@ -2,17 +2,13 @@
 @import '../../assets/style/variables.scss';
 @import '../../assets/style/normalize.scss';
 .Svg_icon{
-    background: var(--bg-color);
+    background: #171f2b;
     .svg_images{
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+        height: $size-vh100;
+        width: $size-vw100;
         svg{
-            width: 50%;
-            height: 50%;
+            width: $size-50;
+            height: $size-50;
             margin: 0 auto;
         } 
         h1{
@@ -22,7 +18,7 @@
             font-style: normal;
             font-size: $font-size-3;
             padding-top: $size-2;
-            color: var(--main-color);
+            color: #0ef;
         }
     }
 }

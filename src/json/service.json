@@ -1,24 +1,27 @@
 [
     {
-
         "id": 1,
         "title": "Developer",
-        "info": "gfdgdgdgdfgdfgdfgfdgdfgg"
+        "info": "About4",
+        "img": "icon-code"
 
     }, {
 
         "id": 2,
-        "title": "Developer",
-        "info": "gfdgdgdgdfgdfgdfgfdgdfg"
+        "title": "GRAPHIC",
+        "info": "About3",
+        "img": "icon-pen"
     }, {
 
         "id": 3,
-        "title": "Developer",
-        "info": "gfdgdgdgdfgdfgdfgfdgdfg"
+        "title": "RESPONSIVE",
+        "info": "Responsive",
+        "img": "icon-symbols"
     }, {
 
         "id": 4,
-        "title": "Developer",
-        "info": "fdgdfdggdfggfdfgfdgdfg"
+        "title": "Group",
+        "info": "TEAMGIT",
+        "img": "icon-github"
     }
 ]

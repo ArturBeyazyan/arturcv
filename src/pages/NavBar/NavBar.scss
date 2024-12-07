@@ -1,0 +1,82 @@
+@import '../../assets//style/mixin.scss';
+@import '../../assets/style/variables.scss';
+@import '../../assets/style/font.scss';
+.NavBar {
+    z-index: 2;
+    width: $size-100;
+    .nav {
+        @include screen-max-width-768 {
+            bottom: $size-1;
+            width: $size-35;
+        }
+        @include screen-max-width-600 {
+            width: $size-25;
+        }
+        @include screen-max-width-400 {
+            width: $size-100;
+            border-radius: 0;
+            bottom: 0;
+        }
+        position: fixed;
+        bottom: $size-2;
+        left: $size-50;
+        transform: translateX(-50%);
+        width: $size-40;
+        padding: $size-2 0;
+        background: var(--third-bg-color);
+        border-radius: $size-5;
+        z-index: 100;
+        .nav_list {
+            li {
+                @include screen-max-width-768 {
+                    font-size: $font-size-2;
+                }
+                position: relative;
+                display: flex;
+                font-size: $font-size-3;
+                transition: $transition-03;
+                a {
+                    color: var(--text-color);
+                    list-style: none;
+                }
+                &:hover,
+                .active {
+                    color: var(--main-color);
+                }
+                .tooltip {
+                    @include screen-max-width-400 {
+                        left: $size-100;
+                    }
+                }
+                i {
+                    &:hover {
+                        color: var(--white-color);
+                    }
+                }
+            }
+            a:hover .tooltip,
+            li:hover .tooltip {
+                // width: $size-8;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                visibility: visible;
+                opacity: 1;
+                @include screen-max-width-400 {
+                    width: $size-8;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+.active {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transition: $transition-05;
+}

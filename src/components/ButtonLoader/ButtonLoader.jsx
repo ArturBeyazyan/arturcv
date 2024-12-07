@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './ButtonLoader.scss'
 export const ButtonLoader = () => {
     const [loading, setLoading] = useState(true)

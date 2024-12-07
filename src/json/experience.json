@@ -1,29 +1,15 @@
 [
     {
         "id": 1,
-        "titleYers": "2021",
-        "titleData": "April-September",
-        "titleLerarn": "Smart code",
-        "info": "gfdgdgdgdfgdfgdfgfdgdfg"
-
+        "title": "experience"
     }, {
-        "id": 1,
-        "titleYers": "2022",
-        "titleData": "May-November",
-        "titleLerarn": "FullLearning",
-        "info": "gfdgdgdgdfgdfgdfgfdgdfg"
+        "id": 2,
+        "title": "experience"
     }, {
         "id": 3,
-        "titleYers": "2021",
-        "titleData": "April-September",
-        "titleLerarn": "Smart code",
-        "info": "gfdgdgdgdfgdfgdfgfdgdfg"
-
+        "title": "experience"
     }, {
         "id": 4,
-        "titleYers": "2022",
-        "titleData": "May-November",
-        "titleLerarn": "FullLearning",
-        "info": "gfdgdgdgdfgdfgdfgfdgdfg"
+        "title": "experience"
     }
 ]

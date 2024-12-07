@@ -1,6 +1,5 @@
 {
     "rc-beautify": {
-        
         "insize": 4,
         "inchar": " ",
         "bracepadding": false,

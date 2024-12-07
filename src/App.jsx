@@ -1,17 +1,12 @@
 import { useEffect, useState } from 'react';
 import './App.scss';
-import { NavBar } from './components/NavBar/NavBar'
-import { Main } from './components/Main/Main'
+import { NavBar } from './pages/NavBar/NavBar'
+import { Main } from './pages/Main/Main'
 import { Loader } from './components/Loader/Loader'
-
-
-
 function App() {
   const [active,setActiive]=useState(1)
   const [isLoading, setIsLoading] = useState(true);
-  const activeList=(index)=>{
-     setActiive(index);
-  }
+  const activeList=(index)=>{setActiive(index);}
   useEffect(() => {
     const fakeDataFetch = () => {
       setTimeout(() => {

@@ -1,34 +1,60 @@
-// FONT FAMILY NAME AS VAR
-// Montserrat armenian
-$Montserrat-Black : 'Montserratarm-Black';
-$Montserrat-Bold : 'Montserratarm-Bold';
-$Montserrat-ExtraBold : 'Montserratarm-ExtraBold';
-$Montserrat-ExtraLight : 'Montserratarm-ExtraLight';
-$Montserrat-Light : 'Montserratarm-Light';
-$Montserrat-Medium : 'Montserratarm-Medium';
-$Montserrat-Regular : 'Montserratarm-Regular';
-$Montserrat-SemiBold : 'Montserratarm-SemiBold';
-$Montserrat-Thin : 'Montserratarm-Thin';
-
-
-$font-path-montserrat : '../../assets/fontFamili/montserrat/';
-$list-montserrat : [
-$Montserrat-Black,
-$Montserrat-Bold,
-$Montserrat-ExtraBold,
-$Montserrat-ExtraLight,
-$Montserrat-Light,
-$Montserrat-Medium,
-$Montserrat-Regular,
-$Montserrat-SemiBold,
-$Montserrat-Thin
-];
-
-@each $name in $list-montserrat {
-  $src : $font-path-montserrat + $name;
-
-  @font-face {
-    src: url($src + '.otf') format('truetype');
-    font-family: $name;
-  }
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }

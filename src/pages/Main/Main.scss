@@ -1,0 +1,28 @@
+@import '../../assets/style/variables.scss';
+@import '../../assets/style/normalize.scss';
+@import '../../assets/style/mixin.scss';
+.container {
+    width: $size-vw100;
+    height:$size-vh100;
+    position: relative;
+    .container_bar {
+        width: $size-100;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 1;
+        @include screen-max-width-600 {
+            justify-content: space-between;
+        }
+        .container_language {
+            padding: $size-1;
+        }
+        .container_time {
+            color: var(--main-color);
+        }
+    }
+    .box {
+        position: relative;
+        width: $size-100;
+        height: $size-100;
+    }
+}

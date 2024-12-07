@@ -1,0 +1,68 @@
+@import '../style/normalize.scss';
+@import '../style/variables.scss';
+.btn {
+    padding: $size-1_2 $size-3;
+    background: var(--main-color);
+    border-radius: $size-5;
+    box-shadow: 0 0 $size-1 var(--main-color);
+    font-size: $font-size-2;
+    font-weight: 600;
+    transition: $transition-03;
+}
+.img_box {
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    background: linear-gradient(var(--bg-color));
+    border-radius: 50%;
+    border: $size-05 solid var(--main-color);
+    box-shadow: 0 0 $size-2 var(--main-color);
+    overflow: hidden;
+    transition: $transition-1;
+}
+.allSection_pages {
+    position: absolute;
+    width: $size-100;
+    height: $size-100;
+    background: var(--bg-color);
+    padding: 0 10%;
+}
+.hTwo_title {
+    color: var(--title-color);
+    text-align: center;
+    font-size: $font-size-3;
+    padding-top: $size-3;
+}
+.tooltip_all {
+    position: absolute;
+    top: $size-_04;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: $size-03 $size-1;
+    background: var(--main-color);
+    border-radius: $size-04;
+    color: var(--bg-color);
+    font-size: $font-size-1_6;
+    font-weight: 500;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition-03;
+}
+.tab_box_all{
+    display: flex;
+    width: $size-100;
+    height: $size-5;
+    margin-top: $size-1;
+    margin-bottom: $size-2;
+}
+.tab_item_all {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    background: var(--third-bg-color);
+    border-radius: $size-08;
+    padding: $size-1;
+    color: var(--white-color);
+    // height: $size-15;
+}

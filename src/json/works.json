@@ -39,6 +39,49 @@
         "path_Preview": "Preview",
         "git_url":"https://github.com/ArturBeyazyan/2048",
         "preview_url":"https://arturbeyazyan.github.io/2048/"
+    },
+    {
+        "id": 5,
+        "img": "ProductFit",
+        "title": "ProductFit",
+        "tech_used": "HTML/CSS",
+        "tech_skills":"JAVASCRIPT",
+        "path_git": "GithubRepository",
+        "path_Preview": "Preview",
+        "git_url":"https://github.com/ArturBeyazyan/ProductFit",
+        "preview_url":"https://arturbeyazyan.github.io/ProductFit/"
+    },
+    {
+        "id": 6,
+        "img": "Timer",
+        "title": "Timer",
+        "tech_used": "HTML/CSS",
+        "tech_skills":"JAVASCRIPT",
+        "path_git": "GithubRepository",
+        "path_Preview": "Preview",
+        "git_url":"https://github.com/ArturBeyazyan/Timer",
+        "preview_url":"https://arturbeyazyan.github.io/Timer/"
+    },
+    {
+        "id": 7,
+        "img": "drowing",
+        "title": "Drowing",
+        "tech_used": "HTML/CSS",
+        "tech_skills":"JAVASCRIPT",
+        "path_git": "GithubRepository",
+        "path_Preview": "Preview",
+        "git_url":"https://github.com/ArturBeyazyan/Drawing",
+        "preview_url":"https://arturbeyazyan.github.io/Drawing/"
+    },
+    {
+        "id": 8,
+        "img": "Caffe",
+        "title": "Coffee",
+        "tech_used": "HTML/CSS",
+        "tech_skills":"JAVASCRIPT",
+        "path_git": "GithubRepository",
+        "path_Preview": "Preview",
+        "git_url":"https://github.com/ArturBeyazyan/Caffe",
+        "preview_url":"https://arturbeyazyan.github.io/Caffe/"
     }
-
 ]

@@ -9,19 +9,11 @@ i18next
     .use(LanguageDetector)
     .init({
         resources: {
-            en: {
-                translation: en_translation
-            },
-            ru: {
-                translation: ru_translation
-            },
-            hy: {
-                translation: hy_translation
-            }
+            en: {translation: en_translation},
+            ru: {translation: ru_translation},
+            hy: { translation: hy_translation}
         },
         fallbackLng: "en",
-        detection: {
-            caches: ['cookie']
-        }
+        detection: { caches: ['cookie']}
     });
 export default i18next;
