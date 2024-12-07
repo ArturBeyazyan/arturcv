@@ -97,6 +97,12 @@
 }
 .tab_grid.education{
     height:55%; 
+    @include screen-max-width-768 {
+        height:100%;
+    }
+    @include screen-max-width-400 {
+        height:65%;
+    }
 }
 .tab_list.resume_list.active {
     border-color: var(--main-color);
