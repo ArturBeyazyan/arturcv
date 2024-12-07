@@ -102,10 +102,16 @@
                             gap: $size-2;
                             overflow-y: auto;
                             overflow-x: hidden;
+                            
+                            
                         }
                         &:hover .tooltip {
                             visibility: visible;
                             opacity: 1;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            visibility: visible;
+                            width: $size-10;
                         }
                     }
                 }

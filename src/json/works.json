@@ -5,8 +5,6 @@
         "title": "TODO",
         "tech_used": "REACT",
         "tech_skills":"SASS",
-        "path_git": "GithubRepository",
-        "path_Preview": "Preview",
         "git_url":"https://github.com/ArturBeyazyan/Todo",
         "preview_url":"https://arturbeyazyan.github.io/Todo/"
     }, {
@@ -14,8 +12,6 @@
         "img": "bubble",
         "title": "Bubble Sort",
         "tech_used": "REACT",
-        "path_git": "GithubRepository",
-        "path_Preview": "Preview",
         "git_url":"https://github.com/ArturBeyazyan/BubbelSort",
         "preview_url":"https://arturbeyazyan.github.io/BubbelSort/"
     }, {
@@ -24,8 +20,6 @@
         "title": "Ridex",
         "tech_used": "HTML/CSS",
         "tech_skills":"JAVASCRIPT",
-        "path_git": "GithubRepository",
-        "path_Preview": "Preview",
         "git_url":"https://github.com/ArturBeyazyan/Ridex",
         "preview_url":"https://arturbeyazyan.github.io/Ridex/"
     },
@@ -35,8 +29,6 @@
         "title": "2048",
         "tech_used": "HTML/CSS",
         "tech_skills":"JAVASCRIPT",
-        "path_git": "GithubRepository",
-        "path_Preview": "Preview",
         "git_url":"https://github.com/ArturBeyazyan/2048",
         "preview_url":"https://arturbeyazyan.github.io/2048/"
     },
@@ -46,8 +38,6 @@
         "title": "ProductFit",
         "tech_used": "HTML/CSS",
         "tech_skills":"JAVASCRIPT",
-        "path_git": "GithubRepository",
-        "path_Preview": "Preview",
         "git_url":"https://github.com/ArturBeyazyan/ProductFit",
         "preview_url":"https://arturbeyazyan.github.io/ProductFit/"
     },
@@ -57,8 +47,6 @@
         "title": "Timer",
         "tech_used": "HTML/CSS",
         "tech_skills":"JAVASCRIPT",
-        "path_git": "GithubRepository",
-        "path_Preview": "Preview",
         "git_url":"https://github.com/ArturBeyazyan/Timer",
         "preview_url":"https://arturbeyazyan.github.io/Timer/"
     },
@@ -68,8 +56,6 @@
         "title": "Drowing",
         "tech_used": "HTML/CSS",
         "tech_skills":"JAVASCRIPT",
-        "path_git": "GithubRepository",
-        "path_Preview": "Preview",
         "git_url":"https://github.com/ArturBeyazyan/Drawing",
         "preview_url":"https://arturbeyazyan.github.io/Drawing/"
     },
@@ -79,8 +65,6 @@
         "title": "Coffee",
         "tech_used": "HTML/CSS",
         "tech_skills":"JAVASCRIPT",
-        "path_git": "GithubRepository",
-        "path_Preview": "Preview",
         "git_url":"https://github.com/ArturBeyazyan/Caffe",
         "preview_url":"https://arturbeyazyan.github.io/Caffe/"
     }

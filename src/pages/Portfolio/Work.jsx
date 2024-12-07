@@ -20,11 +20,11 @@ export const Work = (props) => {
                             <div className="portfolio_icon work_icon">
                                 <NavLink to={el.preview_url} target="_blank">
                                     <i className="icon-arrowright"></i>
-                                    <span className='tooltip tooltip_all roboto-regular'>{t(el.path_Preview)}</span>
+                                    <span className='tooltip tooltip_all roboto-regular'>{t("Preview")}</span>
                                 </NavLink>
                                 <NavLink to={el.git_url} target="_blank">
                                     <i className="icon-github"></i>
-                                    <span className='tooltip tooltip_all roboto-regular'>{t(el.path_git)}</span>
+                                    <span className='tooltip tooltip_all roboto-regular'>{t("GithubRepository")}</span>
                                 </NavLink>
                             </div>
                         </div>

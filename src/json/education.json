@@ -3,14 +3,13 @@
         "id": 1,
         "titleLerarn": "learnone",
         "titleYers": "Yersone",
-        "titleName":"InfoLearnone",
-        "info": "gfdgdgdgdfgdfgdfgfdgdfg"
+        "titleName":"InfoLearnone"
+      
 
     }, {
         "id": 2,
         "titleLerarn": "learntwo",
         "titleYers": "Yerstwo",
-        "titleName":"InfoLearntwo",
-        "info": "gfdgdgdgdfgdfgdfgfdgdfg"
+        "titleName":"InfoLearntwo"
     }
 ]
