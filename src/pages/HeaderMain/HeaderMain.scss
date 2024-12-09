@@ -81,15 +81,12 @@
                         left: 16px;
                         bottom: 18px;
                         font-size: 17px;
-                        color: #fff;
+                        color:  var(--main-color);
                         text-align: center;
                         transition: all 0.4s ease;
                         
                     }
                 }
-
-
-
             }
             .sci {
                 // margin-top: $size-1;
@@ -173,7 +170,7 @@
 
 .label .title a {
     font-size: 17px;
-    color: #fff;
+    color:  var(--main-color);
     text-align: center;
     
 }
