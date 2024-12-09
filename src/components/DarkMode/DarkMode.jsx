@@ -1,5 +1,3 @@
-import { ReactComponent as Sun } from "../../assets/img/Sun.svg";
-import { ReactComponent as Moon } from "../../assets/img/Moon.svg";
 import "./DarkMode.scss";
 const DarkMode = () => {
 	const setDarkMode=()=>{
@@ -22,7 +20,8 @@ const DarkMode = () => {
         <div className='dark_mode'>
             <input className='dark_mode_input' type='checkbox'id='darkmode-toggle'onChange={toggleTheme}defaultChecked={selectTheme ==="dark"}/>
             <label className='dark_mode_label' for='darkmode-toggle'>
-                <Sun/><Moon/>
+			<i className="icon-Sun"></i>
+            <i className="icon-Moon"></i>
             </label>
         </div>
     );

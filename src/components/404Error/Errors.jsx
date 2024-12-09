@@ -4,7 +4,7 @@ import {useTranslation} from 'react-i18next'
 
 export const Errors = () => {
 	const {t}=useTranslation()
-  return (
+return (
     <div className='Errors G-center '>
 		<div className="room G-center ">
 			<div className="cuboid">
@@ -24,10 +24,10 @@ export const Errors = () => {
 				<div className="four">{t("4")}</div>
 				<div className="four">{t("4")}</div>
 				<div className="btn">
-					<NavLink to='/'>{t("BACK")}</NavLink>
+					<NavLink to='/arturcv'>{t("BACK")}</NavLink>
 				</div>
 			</div>
 		</div>
     </div>
-  )
+)
 }

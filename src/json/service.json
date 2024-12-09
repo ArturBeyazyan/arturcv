@@ -4,21 +4,20 @@
         "title": "Developer",
         "info": "About4",
         "img": "icon-code"
-
-    }, {
-
+    }, 
+    {
         "id": 2,
         "title": "GRAPHIC",
         "info": "About3",
         "img": "icon-pen"
-    }, {
-
+    }, 
+    {
         "id": 3,
         "title": "RESPONSIVE",
         "info": "Responsive",
         "img": "icon-symbols"
-    }, {
-
+    },
+    {
         "id": 4,
         "title": "Group",
         "info": "TEAMGIT",

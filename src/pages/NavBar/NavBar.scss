@@ -43,11 +43,11 @@
                 .active {
                     color: var(--main-color);
                 }
-                .tooltip {
-                    @include screen-max-width-400 {
-                        left: $size-100;
-                    }
-                }
+                // .tooltip {
+                //     @include screen-max-width-400 {
+                //         left: 1rem;
+                //     }
+                // }
                 i {
                     &:hover {
                         color: var(--white-color);
@@ -62,7 +62,7 @@
                 visibility: visible;
                 opacity: 1;
                 @include screen-max-width-400 {
-                    width: $size-8;
+                    width: $size-5;
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }

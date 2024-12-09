@@ -6,7 +6,6 @@
     @include screen-max-width-768 {
         flex-direction: column-reverse;
         justify-content: flex-end;
-        // gap: $size-2;
     }
 }
 .section {
@@ -50,21 +49,51 @@
                 @include screen-max-width-768 {
                     padding-top: $size-1;
                 }
-                .btn {
-                    @include screen-max-width-1200 {
-                        font-size: $font-size-1;
+                .label {
+                    position: relative;
+                    width: 3.6rem;
+                    border-radius: 50px;
+                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    border: 2px solid var(--main-color);
+                    background-color: transparent;
+                    transition: all 0.4s ease;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 100%;
+                        margin: auto;
+                        opacity: 0;
+                        visibility: hidden;
+                        background-color: #fff;
+                        transition: all 0.4s ease;
                     }
-                    &:hover {
-                        box-shadow: none;
+                    input {
+                        display: none;
                     }
-                    a {
-                        color: var(--bg-color);
+                    .title {
+                        position: absolute;
+                        left: 16px;
+                        bottom: 18px;
+                        font-size: 17px;
+                        color: #fff;
+                        text-align: center;
+                        transition: all 0.4s ease;
+                        
                     }
                 }
+
+
+
             }
             .sci {
-                margin-top: $size-1;
-                margin-left: $size-2;
+                // margin-top: $size-1;
+                // margin-left: $size-2;
                 @include screen-max-width-1200 {
                     margin-left: $size-1;
                 }
@@ -100,7 +129,7 @@
                         visibility: visible;
                         opacity: 1;
                     }
-                    svg {
+                    i {
                         &:hover {
                             color: var(--white-color);
                         }
@@ -138,5 +167,166 @@
         .home_img:hover {
             box-shadow: 0 0 $size-8 var(--main-color);
         }
+    }
+}
+
+
+.label .title a {
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    
+}
+.label .title:last-child {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.label .circle {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    background-color: var(--main-color);
+    transition: all 0.4s ease;
+}
+
+.label .circle .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.label .circle .square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    border-radius: 2px;
+    aspect-ratio: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    transition: all 0.4s ease;
+}
+
+.label .circle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    // width: 100%;
+    height: 0;
+    background-color: var(--main-color);
+    transition: all 0.4s ease;
+}
+
+.label:has(.input:checked) {
+    width: 57px;
+    animation: installed 0.4s ease 3.5s forwards;
+}
+
+.label:has(.input:checked)::before {
+    animation: rotate 3s ease-in-out 0.4s forwards;
+}
+
+.label .input:checked+.circle {
+    rotate: 180deg;
+    animation: pulse 1s forwards, circleDelete 0.2s ease 3.5s forwards;
+}
+
+.label .input:checked+.circle::before {
+    animation: installing 3s ease-in-out forwards;
+}
+
+.label .input:checked+.circle .icon {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.label .input:checked~.circle .square {
+    opacity: 1;
+    visibility: visible;
+}
+
+.label .input:checked~.title {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.label .input:checked~.title:last-child {
+    animation: showInstalledMessage 0.4s ease 3.5s forwards;
+}
+
+
+
+
+@keyframes pulse {
+    0% {
+        scale: 0.95;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+
+    70% {
+        scale: 1;
+        box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        scale: 0.95;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes installing {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-90deg) translate(27px) rotate(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    99% {
+        transform: rotate(270deg) translate(27px) rotate(270deg);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes circleDelete {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes showInstalledMessage {
+    100% {
+        opacity: 1;
+        visibility: visible;
+        right: 56px;
     }
 }

@@ -3,7 +3,6 @@
     margin-top: -20px;
     padding: 0 $size-1;   
 }
-
 .dark_mode_label {
     width: 65px;
     height: 30px;
@@ -44,25 +43,25 @@
 .dark_mode_label:active:after {
     width: 30px;
 }
-.dark_mode_label svg {
+.dark_mode_label i {
     position: absolute;
     width: 20px;
-    top: 5px;
+    top: 7px;
     z-index: 100;
 }
-.dark_mode_label svg.sun {
-    left: 5px;
+.dark_mode_label i.icon-Sun {
+    left: 7px;
     fill: #fff;
     transition: $transition-03;
 }
-.dark_mode_label svg.moon {
-    left: 40px;
+.dark_mode_label i.icon-Moon {
+    left: 43px;
     fill: #7e7e7e;
     transition: $transition-03;
 }
-.dark_mode_input:checked + .dark_mode_label svg.sun {
+.dark_mode_input:checked + .dark_mode_label i.icon-Sun {
     fill: #7e7e7e;
 }
-.dark_mode_input:checked + .dark_mode_label svg.moon {
+.dark_mode_input:checked + .dark_mode_label i.icon-Moon {
     fill: #fff;
 }
