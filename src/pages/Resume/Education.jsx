@@ -10,10 +10,6 @@ export const Education = (props) => {
                      <h4 className='roboto-regular'>{t(el.titleLerarn)}</h4>
                      <h4 className='roboto-regular'>{t(el.titleYers)}</h4>
                      <h4 className='roboto-regular'>{t(el.titleName)}</h4>
-                     {/* <p className='roboto-regular'>
-                        Lorem ipsum dolor sit, amet consectetur dipisicing elit. Accusamus nam deleniti
-                        voluptates harum exercitationem iusto dolorum iste porro esse impedit.
-                     </p> */}
                   </div>
                )
             })}

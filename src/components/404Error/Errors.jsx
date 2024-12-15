@@ -23,7 +23,7 @@ return (
 				</div>
 				<div className="four">{t("4")}</div>
 				<div className="four">{t("4")}</div>
-				<div className="btn">
+				<div className="btn_err">
 					<NavLink to='/arturcv'>{t("BACK")}</NavLink>
 				</div>
 			</div>

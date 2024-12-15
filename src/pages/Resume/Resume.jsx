@@ -14,7 +14,7 @@ export const Resume = (props) => {
         <h2 className='title hTwo_title roboto-regular'>{t("Resume")}</h2>
         <div className="tab_box tab_box_all" > 
             <div className={`tab_list G-align-center resume_list ${active === 1 ? "active" : ""}`} onClick={()=>activeList(1)}>
-              <h3 className='roboto-regular'>{t("Experience")}</h3>
+              <h3 className='roboto-regular'>{t("EXPERIENCE")}</h3>
             </div>
             <div  className={`tab_list G-align-center resume_list ${active === 2 ? "active" : ""}`}onClick={()=>activeList(2)} >
               <h3 className='roboto-regular'>{t("Skills")}</h3>

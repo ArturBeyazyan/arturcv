@@ -68,7 +68,6 @@
         }
         .tab_item {
             h4 {
-                // font-size: $font-size-2_3;
                 &:nth-child(1){
                     text-align: center;
                 }
@@ -123,7 +122,6 @@
 }
 .resume_item h4:nth-child(1),
 .resume_item h4:nth-child(3) {
-    // font-size: $font-size-1_7;
     color: var(--main-color);
     font-weight: $font-weight-400;
 }

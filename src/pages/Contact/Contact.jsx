@@ -12,10 +12,6 @@ export const Contact = (props) => {
         const emailRegex = /^\S+@\S+\.\S+$/;
         return emailRegex.test(from_email);
     };
-    // const isValidPhoneNumber = (from_phone) => {
-    //     const phoneRegex = /^\d{10}$/;
-    //     return phoneRegex.test(from_phone);
-    // }
     const validateForm = () => {
         let newError = {}
         if (!formData.from_name) {
@@ -33,10 +29,6 @@ export const Contact = (props) => {
             console.log(formData.from_phone);
             newError.from_phone = "Phone number is required";
         } 
-        // else if (!isValidPhoneNumber(from_phone)) {
-        //     console.log(from_phone, "PHONE");
-        //     newError.from_phone = "Phone number must be 10 digits";
-        // }
         if (!formData.message) {
             newError.message = "First name is required"
         }
@@ -52,7 +44,7 @@ export const Contact = (props) => {
                     // console.log('SUCCESS');
                 }
             }, (error) => {
-                // console.log('FAILED...', error.text);
+                console.log('FAILED...', error.text);
             },);
     };
     const handleSubmit = (e) => {
@@ -60,10 +52,7 @@ export const Contact = (props) => {
         const isValid = validateForm();
         if (isValid) {
             sendEmail(formData)
-            // window.location.reload(false)
-            // console.log("Form Submitted", formData);
         } else {
-            // console.log("Form Validation Failed");
         }
     }
     const handleChange = (e) => {

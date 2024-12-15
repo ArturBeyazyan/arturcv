@@ -58,10 +58,8 @@
 .tab_item_all {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     background: var(--third-bg-color);
     border-radius: $size-08;
     padding: $size-1;
     color: var(--white-color);
-    // height: $size-15;
 }
