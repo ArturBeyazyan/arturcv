@@ -45,8 +45,10 @@ export const Contact = (props) => {
             .sendForm('service_fku2x4h', 'template_gx6b0i2', form.current, {publicKey: 'gXxhCD4Q4Zc3eP2SN'})
             .then(() => {
                 if ('SUCCESS') {
-                    setFormData('')
-                    // window     .location     .reload(false) console.log('SUCCESS');
+                    window
+                        .location
+                        .reload(false);
+                    console.log('SUCCESS');
                 }
             }, (error) => {
                 console.log('FAILED...', error.text);
@@ -74,7 +76,8 @@ export const Contact = (props) => {
             : ""}`}>
             <h2 className='title hTwo_title roboto-regular'>{t("Contact")}</h2>
             <div className="contact_wrapper G-justify-center">
-                <form  onSubmit={handleSubmit}
+                <form
+                    onSubmit={handleSubmit}
                     className='contact_form G-justify-center-direction '
                     ref={form}>
                     <h3 className='roboto-regular'>{t("Together")}</h3>
@@ -130,7 +133,7 @@ export const Contact = (props) => {
                         </div>
                     </div>
                     <div className="contact_btn">
-                        <button type='submit'className='btn'>{t("Message")}</button>
+                        <button type='submit' className='btn'>{t("Message")}</button>
                     </div>
                 </form>
             </div>
