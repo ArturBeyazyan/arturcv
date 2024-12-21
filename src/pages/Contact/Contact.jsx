@@ -5,8 +5,10 @@ import {useTranslation} from 'react-i18next';
 
 export const Contact = (props) => {
     const {t} = useTranslation()
-    const [formData, setFormData] = useState({from_name: "", from_lastName: "", from_email: "",from_phone:"", message: ""})
-    const [errors,setErrors] = useState()
+    const [formData,
+        setFormData] = useState({from_name: "", from_lastName: "", from_email: "", from_phone: "", message: ""})
+    const [errors,
+        setErrors] = useState()
     const form = useRef();
     const isValidEmail = (from_email) => {
         const emailRegex = /^\S+@\S+\.\S+$/;
@@ -28,20 +30,23 @@ export const Contact = (props) => {
         if (!formData.from_phone) {
             console.log(formData.from_phone);
             newError.from_phone = "Phone number is required";
-        } 
+        }
         if (!formData.message) {
             newError.message = "First name is required"
         }
         setErrors(newError);
-        return Object.keys(newError).length < 1
+        return Object
+            .keys(newError)
+            .length < 1
     }
+    console.log(errors);
     const sendEmail = (e) => {
         emailjs
             .sendForm('service_fku2x4h', 'template_gx6b0i2', form.current, {publicKey: 'gXxhCD4Q4Zc3eP2SN'})
             .then(() => {
                 if ('SUCCESS') {
-                    window.location.reload(false)
-                    // console.log('SUCCESS');
+                    setFormData('')
+                    // window     .location     .reload(false) console.log('SUCCESS');
                 }
             }, (error) => {
                 console.log('FAILED...', error.text);
@@ -51,9 +56,8 @@ export const Contact = (props) => {
         e.preventDefault();
         const isValid = validateForm();
         if (isValid) {
-            sendEmail(formData)
-        } else {
-        }
+            sendEmail(formData);
+        } else {}
     }
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -62,11 +66,17 @@ export const Contact = (props) => {
             [name]: value
         })
     }
+
     return (
-        <section className={`section contact allSection_pages ${props.active === 5 ? "active": ""}`}>
+        <section
+            className={`section contact allSection_pages ${props.active === 5
+            ? "active"
+            : ""}`}>
             <h2 className='title hTwo_title roboto-regular'>{t("Contact")}</h2>
             <div className="contact_wrapper G-justify-center">
-                <form onSubmit={handleSubmit} className='contact_form G-justify-center-direction ' ref={form}>
+                <form  onSubmit={handleSubmit}
+                    className='contact_form G-justify-center-direction '
+                    ref={form}>
                     <h3 className='roboto-regular'>{t("Together")}</h3>
                     <div className='field_box G-flex-wrap'>
                         <div className='inputBox'>
@@ -75,8 +85,7 @@ export const Contact = (props) => {
                                 name="from_name"
                                 required="required"
                                 onChange={handleChange}
-                                value={formData.from_name}
-                            />
+                                value={formData.from_name}/>
                             <span className='roboto-regular'>{t("FName")}</span>
                             <i></i>
                         </div>
@@ -121,7 +130,7 @@ export const Contact = (props) => {
                         </div>
                     </div>
                     <div className="contact_btn">
-                        <button type='submit' className='btn'>{t("Message")}</button>
+                        <button type='submit'className='btn'>{t("Message")}</button>
                     </div>
                 </form>
             </div>

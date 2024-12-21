@@ -4,5 +4,7 @@
         "inchar": " ",
         "bracepadding": false,
         "wrap": 80
-    }
+    },
+    "notebook.stickyScroll.enabled": false,
+    "workbench.tree.enableStickyScroll": true
 }
