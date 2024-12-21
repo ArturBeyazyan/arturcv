@@ -8,7 +8,7 @@ export const NavBar = (props) => {
             <nav className='nav'>
                 <ul className='nav_list G-justify-evenly '>
                     <li onClick={() => props.activeList(1)}>
-                        <NavLink to='/arturcv'className="roboto-regular"> 
+                        <NavLink to='/arturcv/'className="roboto-regular"> 
                             <i className='icon-home'></i>
                             <span className='tooltip tooltip_all roboto-regular'>{t("Home")}</span>
                         </NavLink>
