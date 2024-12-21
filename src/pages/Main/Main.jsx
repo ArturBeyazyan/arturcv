@@ -4,7 +4,7 @@ import { Resume } from '../Resume/Resume'
 import { Contact } from '../Contact/Contact'
 import { Portfolio } from '../Portfolio/Portfolio'
 import { HeaderMain } from '../HeaderMain/HeaderMain'
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Routes, Route } from "react-router-dom";
 import { Language } from '../../components/Language/Language'
 import  DarkMode  from '../../components/DarkMode/DarkMode'
 import './Main.scss'
