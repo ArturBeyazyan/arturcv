@@ -4,6 +4,9 @@ import {useTranslation} from 'react-i18next'
 
 export const Errors = () => {
 	const {t}=useTranslation()
+	const BackHome=()=>{
+		window.location.reload(true)
+	}
 return (
     <div className='Errors G-center '>
 		<div className="room G-center ">
@@ -24,7 +27,9 @@ return (
 				<div className="four">{t("4")}</div>
 				<div className="four">{t("4")}</div>
 				<div className="btn_err">
-					<NavLink to='/arturcv'>{t("BACK")}</NavLink>
+					<button onClick={BackHome}>
+						<NavLink to='/arturcv' >{t("Home")}</NavLink>
+					</button>
 				</div>
 			</div>
 		</div>

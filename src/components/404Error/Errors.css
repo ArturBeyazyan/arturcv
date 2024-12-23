@@ -12,11 +12,8 @@
     --clr: 1;
 	--hue: calc(30deg - (30deg * var(--clr))); 
 }
-
-
-body * {
+.Errors * {
     transform-style: preserve-3d;
-    /* z-index: 1; */
 }
 
 

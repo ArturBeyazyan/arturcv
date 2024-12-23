@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react';
 import './App.scss';
-import { NavBar } from './pages/NavBar/NavBar'
-import { Main } from './pages/Main/Main'
-import { Loader } from './components/Loader/Loader'
-
+import { Main } from './pages/Main/Main';
+import { Loader } from './components/Loader/Loader';
+import { Errors } from './components/404Error/Errors';
 function App() {
-  const [active,setActiive]=useState(1)
   const [isLoading, setIsLoading] = useState(true);
-  const activeList=(index)=>{setActiive(index);}
+
+   // Ստեղծում ենք թույլատրելի ուղիների ցուցակ
+   const validPaths = ['/arturcv', '/about','/resume','/portfolio', '/contact'];  // Օրինակ
+
+   // Ստուգում ենք текущие URL-ը
+   const currentPath = window.location.pathname;
   useEffect(() => {
     const fakeDataFetch = () => {
       setTimeout(() => {
@@ -18,12 +21,24 @@ function App() {
   }, []);
   return (
     <div className="App">
-      { isLoading ? <Loader /> :
+      {/* { isLoading ? <Loader /> :
         <>
-          <NavBar active={active} activeList={activeList} />
-          <Main active={active} activeList={activeList} />
+          <Main/>
         </>
-      } 
+      }  */}
+
+
+
+      {isLoading ? (
+        <Loader />
+      ) : (
+        // Եթե URL-ը սխալ է, ցուցադրում ենք 404 էջը
+        validPaths.includes(currentPath) ? (
+          <Main />
+        ) : (
+          <Errors />  // 404 էջը սխալ ուղղությունների համար
+        )
+      )}
     </div>
   );
 }

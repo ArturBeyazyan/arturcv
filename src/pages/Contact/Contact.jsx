@@ -5,10 +5,9 @@ import {useTranslation} from 'react-i18next';
 
 export const Contact = (props) => {
     const {t} = useTranslation()
-    const [formData,
-        setFormData] = useState({from_name: "", from_lastName: "", from_email: "", from_phone: "", message: ""})
-    const [errors,
-        setErrors] = useState()
+    const [isButtonActive, setIsButtonActive] = useState(false);
+    const [formData,setFormData] = useState({from_name: "", from_lastName: "", from_email: "", from_phone: "", message: ""})
+    const [errors,setErrors] = useState()
     const form = useRef();
     const isValidEmail = (from_email) => {
         const emailRegex = /^\S+@\S+\.\S+$/;
@@ -39,15 +38,12 @@ export const Contact = (props) => {
             .keys(newError)
             .length < 1
     }
-    console.log(errors);
     const sendEmail = (e) => {
         emailjs
             .sendForm('service_fku2x4h', 'template_gx6b0i2', form.current, {publicKey: 'gXxhCD4Q4Zc3eP2SN'})
             .then(() => {
                 if ('SUCCESS') {
-                    window
-                        .location
-                        .reload(false);
+                    window.location.reload(false);
                     console.log('SUCCESS');
                 }
             }, (error) => {
@@ -59,7 +55,9 @@ export const Contact = (props) => {
         const isValid = validateForm();
         if (isValid) {
             sendEmail(formData);
-        } else {}
+        }else{
+            sendEmail(!formData);
+        }
     }
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -67,6 +65,11 @@ export const Contact = (props) => {
             ...formData,
             [name]: value
         })
+        if(setFormData){
+            setIsButtonActive(true)
+        }else{
+            setIsButtonActive(false)
+        }
     }
 
     return (
@@ -133,7 +136,8 @@ export const Contact = (props) => {
                         </div>
                     </div>
                     <div className="contact_btn">
-                        <button type='submit' className='btn'>{t("Message")}</button>
+                        <button type='submit'disabled={!isButtonActive}
+                        style={{cursor: isButtonActive ? "pointer" : "not-allowed",}} className='btn'>{t("Message")}</button>
                     </div>
                 </form>
             </div>
