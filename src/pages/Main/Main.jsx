@@ -1,4 +1,3 @@
-// import React, { useEffect,useState } from 'react'
 import { About } from '../About/About'
 import { Resume } from '../Resume/Resume'
 import { Contact } from '../Contact/Contact'
@@ -10,6 +9,7 @@ import  DarkMode  from '../../components/DarkMode/DarkMode'
 import './Main.scss'
 import { useState } from 'react'
 import { NavBar } from '../NavBar/NavBar'
+
 export const Main = () => {
   const activeList=(index)=>{setActiive(index);}
   const [active,setActiive]=useState(1)

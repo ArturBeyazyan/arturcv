@@ -6,14 +6,14 @@ export const Typewriters = () => {
   const {t}=useTranslation()
   return (
     <>
-        <Typewriter options={{ autoStart: true, loop: true, }}
-                onInit={(typewriter) => {
-                    typewriter.start()
-                    .typeString (t("Welcome")).pauseFor(3000).deleteAll()
-                    // .typeString("HTML/CSS.").pauseFor(3000).deleteAll()
-                    .start()
-                }}
-            />
+      <Typewriter options={{ autoStart: true, loop: true, }}
+        onInit={(typewriter) => {
+          typewriter
+            .start()
+            .typeString (t("Welcome")).pauseFor(3000).deleteAll()
+            .start()
+        }}
+      />
     </>
   )
 }

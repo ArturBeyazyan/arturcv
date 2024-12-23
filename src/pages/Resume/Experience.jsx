@@ -6,7 +6,6 @@ export const Experience = (props) => {
       <>
          <div className={`tab_grid experience resume_box ${props.active  === 1 ? "active" : ""}`}>
             {experence && experence.map((el,id)=>{
-               console.log(el,"fdsfsd");
                return(
                   <div className= "tab_item tab_item_all resume_item" key={id}>
                      <h2 className='roboto-regular'>{t(el.title)}</h2>

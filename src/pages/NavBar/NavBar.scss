@@ -43,7 +43,7 @@
                 .active {
                     color: var(--main-color);
                 }
-              
+
                 i {
                     &:hover {
                         color: var(--white-color);
@@ -52,7 +52,7 @@
             }
             a:hover .tooltip,
             li:hover .tooltip {
-                
+
                 overflow: hidden;
                 text-overflow: ellipsis;
                 visibility: visible;

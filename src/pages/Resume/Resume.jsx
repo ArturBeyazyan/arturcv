@@ -7,7 +7,7 @@ import { Experience } from './Experience';
 export const Resume = (props) => {
   const [t]=useTranslation()
   const [active,setActiive]=useState(1)
-  const activeList=(index)=>{setActiive(index);}
+  const activeList=(index)=>{setActiive(index)};
   return (
     <>
     <section className={`section resume allSection_pages ${props.active === 3 ? "active" : ""}`}>

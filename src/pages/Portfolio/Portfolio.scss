@@ -84,7 +84,7 @@
                         display: inline-flex;
                         padding: $size-05;
                         background: var(--white-color);
-                        border-radius:$size-50;
+                        border-radius: $size-50;
                         font-size: $font-size-1;
                         color: var(--bg-color);
                         border: $size-02 solid var(--main-color);
@@ -118,7 +118,7 @@
                 visibility: visible;
                 opacity: 1;
             }
-            p{
+            p {
                 margin-top: $size-05;
             }
         }
@@ -140,7 +140,7 @@
     transform: rotate(-135deg);
     transition: $transition-03;
 }
-.tab_item.portfolio_item .service_icon a:hover  {
+.tab_item.portfolio_item .service_icon a:hover {
     transform: rotate(-40deg);
 }
 .tab_item .portfolio_icon a {
