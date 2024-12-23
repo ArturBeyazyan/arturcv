@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/arturcv/static/css/main.3eba5a94.css",
-    "main.js": "/arturcv/static/js/main.861a2697.js",
+    "main.css": "/arturcv/static/css/main.7b3c213c.css",
+    "main.js": "/arturcv/static/js/main.1f3e192b.js",
     "static/media/Car.png": "/arturcv/static/media/Car.90a83b309a8f48a17b05.png",
     "static/media/Caffe.png": "/arturcv/static/media/Caffe.36629119aed5f67fab0f.png",
     "static/media/ProductFit.png": "/arturcv/static/media/ProductFit.5633ff7cd31b91de3926.png",
@@ -17,11 +17,11 @@
     "static/media/icomoon.woff?i2nwjy": "/arturcv/static/media/icomoon.823d8223b735e089238d.woff",
     "static/media/icomoon.ttf?i2nwjy": "/arturcv/static/media/icomoon.96f6b9946c53e9ad74f6.ttf",
     "index.html": "/arturcv/index.html",
-    "main.3eba5a94.css.map": "/arturcv/static/css/main.3eba5a94.css.map",
-    "main.861a2697.js.map": "/arturcv/static/js/main.861a2697.js.map"
+    "main.7b3c213c.css.map": "/arturcv/static/css/main.7b3c213c.css.map",
+    "main.1f3e192b.js.map": "/arturcv/static/js/main.1f3e192b.js.map"
   },
   "entrypoints": [
-    "static/css/main.3eba5a94.css",
-    "static/js/main.861a2697.js"
+    "static/css/main.7b3c213c.css",
+    "static/js/main.1f3e192b.js"
   ]
 }
